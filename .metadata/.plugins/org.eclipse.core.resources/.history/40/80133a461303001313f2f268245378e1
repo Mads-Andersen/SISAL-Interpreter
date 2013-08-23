@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12/trunk/src/test/scala/net/pragyah/scalgorithms/sorting
+END
+TestQuickSort.scala
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/10/trunk/src/test/scala/net/pragyah/scalgorithms/sorting/TestQuickSort.scala
+END
+TestMergeSort.scala
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/12/trunk/src/test/scala/net/pragyah/scalgorithms/sorting/TestMergeSort.scala
+END

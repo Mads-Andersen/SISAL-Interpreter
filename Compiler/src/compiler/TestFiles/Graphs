@@ -1,0 +1,24 @@
+G	0
+N 3	113	%sl=11
+N 4	114
+G	14	"generate"	%sl=6	%sf=program1.sis
+N 3	113	%sl=11
+N 4	114
+G	14	"2"	%sl=6	%sf=program1.sis
+N 3	113	%sl=11
+N 4	114
+G	14	"generate"
+N 3	113	%sl=11
+N 4	114
+G	0	%sl=9	%sf=program1.sis
+N 3	113	%sl=11
+N 4	114
+X	21	"main"	%sl=28	%sf=program1.sis
+N 3	113	%sl=11
+N 4	114
+X	21	"main"	%sl=28	%sf=program1.sis
+N 3	113	%sl=11
+N 4	114
+X	21	"main"	%sl=28	%sf=program1.sis
+N 3	113	%sl=11
+N 4	114

@@ -1,0 +1,468 @@
+T 1 1 0    %na=Boolean
+T 2 1 1    %na=Character
+T 3 1 2    %na=Double
+T 4 1 3    %na=Integer
+T 5 1 4    %na=Null
+T 6 1 5    %na=Real
+T 7 1 6    %na=WildBasic
+T 8 10
+T 9 8	4	0
+T 10 3	9	9
+T 11 3	0	9
+C$  C Faked IF1CHECK
+C$  D Nodes are DFOrdered
+C$  F Livermore Frontend   Version1.8
+G	10	"func"	%sl=3	%sf=../Programs/Par-ABCD.sis
+N 1	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	0 1	1 1	4	 %na=n	%mk=V	%sl=4
+L		1 2	4 "0"	%mk=V
+N 2	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	1 1	2 1	4	%mk=V
+L		2 2	4 "0"	%mk=V
+N 3	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	2 1	3 1	4	%mk=V
+L		3 2	4 "0"	%mk=V
+N 4	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	3 1	4 1	4	%mk=V
+L		4 2	4 "0"	%mk=V
+N 5	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	4 1	5 1	4	%mk=V
+L		5 2	4 "0"	%mk=V
+N 6	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	5 1	6 1	4	%mk=V
+L		6 2	4 "0"	%mk=V
+N 7	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	6 1	7 1	4	%mk=V
+L		7 2	4 "0"	%mk=V
+N 8	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	7 1	8 1	4	%mk=V
+L		8 2	4 "0"	%mk=V
+N 9	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	8 1	9 1	4	%mk=V
+L		9 2	4 "0"	%mk=V
+N 10	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	9 1	10 1	4	%mk=V
+L		10 2	4 "0"	%mk=V
+N 11	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	10 1	11 1	4	%mk=V
+L		11 2	4 "0"	%mk=V
+N 12	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	11 1	12 1	4	%mk=V
+L		12 2	4 "0"	%mk=V
+N 13	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	12 1	13 1	4	%mk=V
+L		13 2	4 "0"	%mk=V
+N 14	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	13 1	14 1	4	%mk=V
+L		14 2	4 "0"	%mk=V
+N 15	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	14 1	15 1	4	%mk=V
+L		15 2	4 "0"	%mk=V
+N 16	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	15 1	16 1	4	%mk=V
+L		16 2	4 "0"	%mk=V
+N 17	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	16 1	17 1	4	%mk=V
+L		17 2	4 "0"	%mk=V
+N 18	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	17 1	18 1	4	%mk=V
+L		18 2	4 "0"	%mk=V
+N 19	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	18 1	19 1	4	%mk=V
+L		19 2	4 "0"	%mk=V
+N 20	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	19 1	20 1	4	%mk=V
+L		20 2	4 "0"	%mk=V
+N 21	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	20 1	21 1	4	%mk=V
+L		21 2	4 "0"	%mk=V
+N 22	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	21 1	22 1	4	%mk=V
+L		22 2	4 "0"	%mk=V
+N 23	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	22 1	23 1	4	%mk=V
+L		23 2	4 "0"	%mk=V
+N 24	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	23 1	24 1	4	%mk=V
+L		24 2	4 "0"	%mk=V
+N 25	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	24 1	25 1	4	%mk=V
+L		25 2	4 "0"	%mk=V
+N 26	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	25 1	26 1	4	%mk=V
+L		26 2	4 "0"	%mk=V
+N 27	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	26 1	27 1	4	%mk=V
+L		27 2	4 "0"	%mk=V
+N 28	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	27 1	28 1	4	%mk=V
+L		28 2	4 "0"	%mk=V
+N 29	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	28 1	29 1	4	%mk=V
+L		29 2	4 "0"	%mk=V
+N 30	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	29 1	30 1	4	%mk=V
+L		30 2	4 "0"	%mk=V
+N 31	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	30 1	31 1	4	%mk=V
+L		31 2	4 "0"	%mk=V
+N 32	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	31 1	32 1	4	%mk=V
+L		32 2	4 "0"	%mk=V
+N 33	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	32 1	33 1	4	%mk=V
+L		33 2	4 "0"	%mk=V
+N 34	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	33 1	34 1	4	%mk=V
+L		34 2	4 "0"	%mk=V
+N 35	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	34 1	35 1	4	%mk=V
+L		35 2	4 "0"	%mk=V
+N 36	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	35 1	36 1	4	%mk=V
+L		36 2	4 "0"	%mk=V
+N 37	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	36 1	37 1	4	%mk=V
+L		37 2	4 "0"	%mk=V
+N 38	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	37 1	38 1	4	%mk=V
+L		38 2	4 "0"	%mk=V
+N 39	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	38 1	39 1	4	%mk=V
+L		39 2	4 "0"	%mk=V
+N 40	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	39 1	40 1	4	%mk=V
+L		40 2	4 "0"	%mk=V
+N 41	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	40 1	41 1	4	%mk=V
+L		41 2	4 "0"	%mk=V
+N 42	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	41 1	42 1	4	%mk=V
+L		42 2	4 "0"	%mk=V
+N 43	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	42 1	43 1	4	%mk=V
+L		43 2	4 "0"	%mk=V
+N 44	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	43 1	44 1	4	%mk=V
+L		44 2	4 "0"	%mk=V
+N 45	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	44 1	45 1	4	%mk=V
+L		45 2	4 "0"	%mk=V
+N 46	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	45 1	46 1	4	%mk=V
+L		46 2	4 "0"	%mk=V
+N 47	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	46 1	47 1	4	%mk=V
+L		47 2	4 "0"	%mk=V
+N 48	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	47 1	48 1	4	%mk=V
+L		48 2	4 "0"	%mk=V
+N 49	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	48 1	49 1	4	%mk=V
+L		49 2	4 "0"	%mk=V
+N 50	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	49 1	50 1	4	%mk=V
+L		50 2	4 "0"	%mk=V
+N 51	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	50 1	51 1	4	%mk=V
+L		51 2	4 "0"	%mk=V
+N 52	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	51 1	52 1	4	%mk=V
+L		52 2	4 "0"	%mk=V
+N 53	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	52 1	53 1	4	%mk=V
+L		53 2	4 "0"	%mk=V
+N 54	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	53 1	54 1	4	%mk=V
+L		54 2	4 "0"	%mk=V
+N 55	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	54 1	55 1	4	%mk=V
+L		55 2	4 "0"	%mk=V
+N 56	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	55 1	56 1	4	%mk=V
+L		56 2	4 "0"	%mk=V
+N 57	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	56 1	57 1	4	%mk=V
+L		57 2	4 "0"	%mk=V
+N 58	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	57 1	58 1	4	%mk=V
+L		58 2	4 "0"	%mk=V
+N 59	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	58 1	59 1	4	%mk=V
+L		59 2	4 "0"	%mk=V
+N 60	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	59 1	60 1	4	%mk=V
+L		60 2	4 "0"	%mk=V
+N 61	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	60 1	61 1	4	%mk=V
+L		61 2	4 "0"	%mk=V
+N 62	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	61 1	62 1	4	%mk=V
+L		62 2	4 "0"	%mk=V
+N 63	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	62 1	63 1	4	%mk=V
+L		63 2	4 "0"	%mk=V
+N 64	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	63 1	64 1	4	%mk=V
+L		64 2	4 "0"	%mk=V
+N 65	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	64 1	65 1	4	%mk=V
+L		65 2	4 "0"	%mk=V
+N 66	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	65 1	66 1	4	%mk=V
+L		66 2	4 "0"	%mk=V
+N 67	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	66 1	67 1	4	%mk=V
+L		67 2	4 "0"	%mk=V
+N 68	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	67 1	68 1	4	%mk=V
+L		68 2	4 "0"	%mk=V
+N 69	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	68 1	69 1	4	%mk=V
+L		69 2	4 "0"	%mk=V
+N 70	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	69 1	70 1	4	%mk=V
+L		70 2	4 "0"	%mk=V
+N 71	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	70 1	71 1	4	%mk=V
+L		71 2	4 "0"	%mk=V
+N 72	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	71 1	72 1	4	%mk=V
+L		72 2	4 "0"	%mk=V
+N 73	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	72 1	73 1	4	%mk=V
+L		73 2	4 "0"	%mk=V
+N 74	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	73 1	74 1	4	%mk=V
+L		74 2	4 "0"	%mk=V
+N 75	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	74 1	75 1	4	%mk=V
+L		75 2	4 "0"	%mk=V
+N 76	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	75 1	76 1	4	%mk=V
+L		76 2	4 "0"	%mk=V
+N 77	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	76 1	77 1	4	%mk=V
+L		77 2	4 "0"	%mk=V
+N 78	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	77 1	78 1	4	%mk=V
+L		78 2	4 "0"	%mk=V
+N 79	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	78 1	79 1	4	%mk=V
+L		79 2	4 "0"	%mk=V
+N 80	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	79 1	80 1	4	%mk=V
+L		80 2	4 "0"	%mk=V
+N 81	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	80 1	81 1	4	%mk=V
+L		81 2	4 "0"	%mk=V
+N 82	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	81 1	82 1	4	%mk=V
+L		82 2	4 "0"	%mk=V
+N 83	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	82 1	83 1	4	%mk=V
+L		83 2	4 "0"	%mk=V
+N 84	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	83 1	84 1	4	%mk=V
+L		84 2	4 "0"	%mk=V
+N 85	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	84 1	85 1	4	%mk=V
+L		85 2	4 "0"	%mk=V
+N 86	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	85 1	86 1	4	%mk=V
+L		86 2	4 "0"	%mk=V
+N 87	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	86 1	87 1	4	%mk=V
+L		87 2	4 "0"	%mk=V
+N 88	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	87 1	88 1	4	%mk=V
+L		88 2	4 "0"	%mk=V
+N 89	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	88 1	89 1	4	%mk=V
+L		89 2	4 "0"	%mk=V
+N 90	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	89 1	90 1	4	%mk=V
+L		90 2	4 "0"	%mk=V
+N 91	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	90 1	91 1	4	%mk=V
+L		91 2	4 "0"	%mk=V
+N 92	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	91 1	92 1	4	%mk=V
+L		92 2	4 "0"	%mk=V
+N 93	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	92 1	93 1	4	%mk=V
+L		93 2	4 "0"	%mk=V
+N 94	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	93 1	94 1	4	%mk=V
+L		94 2	4 "0"	%mk=V
+N 95	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	94 1	95 1	4	%mk=V
+L		95 2	4 "0"	%mk=V
+N 96	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	95 1	96 1	4	%mk=V
+L		96 2	4 "0"	%mk=V
+N 97	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	96 1	97 1	4	%mk=V
+L		97 2	4 "0"	%mk=V
+N 98	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	97 1	98 1	4	%mk=V
+L		98 2	4 "0"	%mk=V
+N 99	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	98 1	99 1	4	%mk=V
+L		99 2	4 "0"	%mk=V
+N 100	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	99 1	100 1	4	%mk=V
+L		100 2	4 "0"	%mk=V
+N 101	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	100 1	101 1	4	%mk=V
+L		101 2	4 "0"	%mk=V
+N 102	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	101 1	102 1	4	%mk=V
+L		102 2	4 "0"	%mk=V
+N 103	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	102 1	103 1	4	%mk=V
+L		103 2	4 "0"	%mk=V
+N 104	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	103 1	104 1	4	%mk=V
+L		104 2	4 "0"	%mk=V
+N 105	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	104 1	105 1	4	%mk=V
+L		105 2	4 "0"	%mk=V
+N 106	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	105 1	106 1	4	%mk=V
+L		106 2	4 "0"	%mk=V
+N 107	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	106 1	107 1	4	%mk=V
+L		107 2	4 "0"	%mk=V
+N 108	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	107 1	108 1	4	%mk=V
+L		108 2	4 "0"	%mk=V
+N 109	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	108 1	109 1	4	%mk=V
+L		109 2	4 "0"	%mk=V
+N 110	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	109 1	110 1	4	%mk=V
+L		110 2	4 "0"	%mk=V
+N 111	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	110 1	111 1	4	%mk=V
+L		111 2	4 "0"	%mk=V
+N 112	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	111 1	112 1	4	%mk=V
+L		112 2	4 "0"	%mk=V
+N 113	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	112 1	113 1	4	%mk=V
+L		113 2	4 "0"	%mk=V
+N 114	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	113 1	114 1	4	%mk=V
+L		114 2	4 "0"	%mk=V
+N 115	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	114 1	115 1	4	%mk=V
+L		115 2	4 "0"	%mk=V
+N 116	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	115 1	116 1	4	%mk=V
+L		116 2	4 "0"	%mk=V
+N 117	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	116 1	117 1	4	%mk=V
+L		117 2	4 "0"	%mk=V
+N 118	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	117 1	118 1	4	%mk=V
+L		118 2	4 "0"	%mk=V
+N 119	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	118 1	119 1	4	%mk=V
+L		119 2	4 "0"	%mk=V
+N 120	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	119 1	120 1	4	%mk=V
+L		120 2	4 "0"	%mk=V
+N 121	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	120 1	121 1	4	%mk=V
+L		121 2	4 "0"	%mk=V
+N 122	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	121 1	122 1	4	%mk=V
+L		122 2	4 "0"	%mk=V
+N 123	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	122 1	123 1	4	%mk=V
+L		123 2	4 "0"	%mk=V
+N 124	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	123 1	124 1	4	%mk=V
+L		124 2	4 "0"	%mk=V
+N 125	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	124 1	125 1	4	%mk=V
+L		125 2	4 "0"	%mk=V
+N 126	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	125 1	126 1	4	%mk=V
+L		126 2	4 "0"	%mk=V
+N 127	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	126 1	127 1	4	%mk=V
+L		127 2	4 "0"	%mk=V
+N 128	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	127 1	128 1	4	%mk=V
+L		128 2	4 "0"	%mk=V
+N 129	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	128 1	129 1	4	%mk=V
+L		129 2	4 "0"	%mk=V
+N 130	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	129 1	130 1	4	%mk=V
+L		130 2	4 "0"	%mk=V
+N 131	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	130 1	131 1	4	%mk=V
+L		131 2	4 "0"	%mk=V
+N 132	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	131 1	132 1	4	%mk=V
+L		132 2	4 "0"	%mk=V
+N 133	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	132 1	133 1	4	%mk=V
+L		133 2	4 "0"	%mk=V
+N 134	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	133 1	134 1	4	%mk=V
+L		134 2	4 "0"	%mk=V
+N 135	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	134 1	135 1	4	%mk=V
+L		135 2	4 "0"	%mk=V
+N 136	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	135 1	136 1	4	%mk=V
+L		136 2	4 "0"	%mk=V
+N 137	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	136 1	137 1	4	%mk=V
+L		137 2	4 "0"	%mk=V
+N 138	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	137 1	138 1	4	%mk=V
+L		138 2	4 "0"	%mk=V
+N 139	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	138 1	139 1	4	%mk=V
+L		139 2	4 "0"	%mk=V
+N 140	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	139 1	140 1	4	%mk=V
+L		140 2	4 "0"	%mk=V
+N 141	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	140 1	141 1	4	%mk=V
+L		141 2	4 "0"	%mk=V
+N 142	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	141 1	142 1	4	%mk=V
+L		142 2	4 "0"	%mk=V
+N 143	141	%sl=4	%sf=../Programs/Par-ABCD.sis
+E	142 1	143 1	4	%mk=V
+L		143 2	4 "0"	%mk=V
+E	143 1	0 1	4	%mk=V
+X	11	"main"	%sl=8	%sf=../Programs/Par-ABCD.sis
+N 1	120	%sl=9	%sf=../Programs/Par-ABCD.sis
+L		1 1	10 "func"	%mk=V
+L		1 2	4 "1"	%mk=V
+N 2	120	%sl=10	%sf=../Programs/Par-ABCD.sis
+L		2 1	10 "func"	%mk=V
+L		2 2	4 "2"	%mk=V
+N 3	120	%sl=11	%sf=../Programs/Par-ABCD.sis
+L		3 1	10 "func"	%mk=V
+L		3 2	4 "3"	%mk=V
+N 4	120	%sl=12	%sf=../Programs/Par-ABCD.sis
+L		4 1	10 "func"	%mk=V
+L		4 2	4 "4"	%mk=V
+N 5	141	%sl=13	%sf=../Programs/Par-ABCD.sis
+E	1 1	5 1	4	 %na=a	%mk=V	%sl=13
+E	2 1	5 2	4	 %na=b	%mk=V	%sl=13
+N 6	141	%sl=13	%sf=../Programs/Par-ABCD.sis
+E	5 1	6 1	4	%mk=V
+E	3 1	6 2	4	 %na=c	%mk=V	%sl=13
+N 7	141	%sl=13	%sf=../Programs/Par-ABCD.sis
+E	6 1	7 1	4	%mk=V
+E	4 1	7 2	4	 %na=d	%mk=V	%sl=13
+E	7 1	0 1	4	%mk=V

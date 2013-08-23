@@ -1,0 +1,16 @@
+Define Main
+
+function factorial(n:integer returns integer)
+
+	if n = 0 then
+		1
+	else
+		n * factorial(n-1)
+	end if
+
+end function
+
+
+function Main( returns integer ) 
+	factorial(5)
+end function

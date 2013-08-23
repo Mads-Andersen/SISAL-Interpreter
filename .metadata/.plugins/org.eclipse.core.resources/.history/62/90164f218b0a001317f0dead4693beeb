@@ -1,0 +1,65 @@
+package partitioner
+
+import parser.Type._
+import parser._
+import interpreter.TopologicalSort
+import interpreter._
+import utility.GraphPrinter
+
+object GraphExpansion { 
+  
+  def part(graph : CostGraph) : Partition = {
+    val macros = graph.nodes.map(x => matchNode(graph, x))
+    val history = merging(graph, macros, List(macros))
+    val values = history.map(x => TimeModel.fTT(x))
+    val index = values.zipWithIndex.minBy(x => x._1)._2
+    println(values)
+    history(index)
+  }
+  
+  def merging(overview: CostGraph, macros: Macros, history: Partitions) : Partitions = macros match {
+    case h :: Nil => history
+    case h :: t => mergingLocal(overview, macros, history)
+  }
+  
+  def mergingLocal(overview: CostGraph, macros: Macros, history: Partitions) : Partitions = {
+    val best = pick(macros)  
+    val lowValue = examine(overview, best, macros)
+    val partition = TaskMerger.merge(overview, best, lowValue, macros)
+    merging(overview, partition, history :+ partition)
+  }
+  
+  def matchNode(graph: CostGraph, node: CostNode) : Macro = node.node match {
+    case x: NCall => simpleToTask(graph, node)
+    case x: PSNode => simpleToTask(graph, node)
+    case x: PCNode => compoundToTask(graph, node)
+  }
+  
+  def callToTask(graph: CostGraph, node: CostNode) : Macro = {
+    TaskMerger.createTask(graph, node)
+  }
+  
+  def simpleToTask(graph: CostGraph, node: CostNode) : Macro = {
+    TaskMerger.createTask(graph, node)
+  }
+  
+  def compoundToTask(graph: CostGraph, node: CostNode) : Macro = {
+    //node.graphs.map(x => part(graph)).flatten
+    TaskMerger.createTask(graph, node)
+  }
+  
+  def examine(overview: CostGraph, selected: CostGraph, tasks: CostGraphs) : Macro = {
+    val others = tasks.filter(x => x != selected)
+    val candidates = others.map(x => TimeModel.fTT(TaskMerger.merge(overview, selected, x, others)))
+    val minIndex = candidates.zipWithIndex.minBy(x => x._1)._2
+    val best = others(minIndex)
+    best
+  }
+  
+  def pick(tasks: CostGraphs) : Macro = {
+    val values = tasks.map(x => TimeModel.overhead(x))
+    val maxIndex = values.zipWithIndex.maxBy(x => x._1)._2
+    val best = tasks(maxIndex) 
+    best
+  }
+}

@@ -1,0 +1,31 @@
+package partitioner
+
+import parser.Type._
+import parser._
+import interpreter.TopologicalSort
+import interpreter._
+import utility.GraphPrinter
+
+object Partitioner {
+
+  var program = Program(List(), List())
+
+  def main(args: Array[String]) {
+    //partition(Runner.seqABCD)
+    GraphPrinter.openGraphs(partition(Runner.seqABCD).map(x => x.graph))
+  }
+
+  def partition(program: Program) = {
+    Partitioner.program = program    
+    val graphs = CostAssignment.assign(program)
+    TimeModel.timeSeq = CostAssignment.cost(graphs.last)
+    println(CostAssignment.cost(graphs.last))
+    val partition = GraphExpansion.part(graphs.last)
+    val x = partition(1)
+    Interpreter.program = program
+    val result = Interpreter.eval(x.graph, List())
+    println(result)
+    println(partition)
+    partition
+  }  
+}

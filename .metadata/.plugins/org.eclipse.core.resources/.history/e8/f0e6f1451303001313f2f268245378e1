@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/88/trunk/src/test/scala/net/pragyah/scalgorithms/aima/logic/propositional
+END
+TestModel.scala
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/69/trunk/src/test/scala/net/pragyah/scalgorithms/aima/logic/propositional/TestModel.scala
+END
+TestEquivalences.scala
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/85/trunk/src/test/scala/net/pragyah/scalgorithms/aima/logic/propositional/TestEquivalences.scala
+END
+TestCore.scala
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/88/trunk/src/test/scala/net/pragyah/scalgorithms/aima/logic/propositional/TestCore.scala
+END
+TestCNFTransformer.scala
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/85/trunk/src/test/scala/net/pragyah/scalgorithms/aima/logic/propositional/TestCNFTransformer.scala
+END

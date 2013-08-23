@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 5 resources" deleteContents="false" description="Delete 5 resources" element1="/org.scala.tools.eclipse.search" element2="/org.scala.tools.eclipse.search.feature" element3="/org.scala.tools.eclipse.search.source.feature" element4="/org.scala.tools.eclipse.search.tests" element5="/org.scala.tools.eclipse.search.update-site" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="5" stamp="1371823239051"/>
+</session>

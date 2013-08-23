@@ -1,0 +1,34 @@
+package partitioner
+
+import parser.Type._
+import parser._
+import interpreter.TopologicalSort
+import interpreter._
+import utility.GraphPrinter
+
+object Partitioner {
+
+  var program = Program(List(), List())
+
+  def main(args: Array[String]) {
+    partition(Runner.parABCD)
+    //GraphPrinter.openGraphs(Runner.seqABCD.graphs)
+  }
+
+  def partition(program: Program) = {
+    Partitioner.program = program
+    val option = program.graphs.find(x => x.name.value.toUpperCase() == "MAIN")
+    val main = option.getOrElse(program.graphs(0))
+    val scc = SCC.execute(program)
+    
+    TimeModel.timeSeq = CostAssignment.createCostGraph(scc.last).nodes.map(x => x.cost).sum
+    val costGraphs = scc.map(x => CostAssignment.createCostGraph(x))
+    val x = GraphExpansion.part(costGraphs(1))
+    GraphPrinter.openGraphs(x.map(x => x.graph.graph))
+    //println(costGraphs)
+    costGraphs.foreach(x => println(x.nodes.map(x => x.cost).sum))
+    //val graphsPartitions = scc.map(x => GraphExpansion.part((x)))
+    //println(TimeModel.timeSeq)
+    //GraphPrinter.openGraphs(GraphExpansion.part(scc.last))
+  }  
+}

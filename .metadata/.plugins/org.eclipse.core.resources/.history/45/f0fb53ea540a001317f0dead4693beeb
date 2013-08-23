@@ -1,0 +1,39 @@
+package partitioner
+
+import parser.Type._
+import parser._
+import interpreter.TopologicalSort
+import interpreter._
+import utility.GraphPrinter
+
+case class MEdge(source: Int, sink: Int)
+case class MNode(id: Int, graph: CostGraph)
+
+object Hej {
+
+  def convert(graphs: Seq[CostGraph]) = {
+    val nodes = graphs.zipWithIndex.map(x => MNode((x._2 + 1), x._1))
+  }
+  
+  def test(node: MNode) = {
+    val nodes = node.graph.nodes.map(x => x.node.id)
+    val edges = node.graph.edges
+    val parentEdges = edges.filter(x => !nodes.contains(x.sNode)) // 0 og literal skal v¾k
+    val childrenEdges = edges.filter(x => !nodes.contains(x.dNode))
+  }
+  
+  def childrenNodes(node: MNode, ids: Seq[Int]) = {
+    val idss = node.graph.nodes.map(x => x.node.id)
+    idss.filter(x => !ids.contains(x))
+  }
+  
+  def parentNodes(node: MNode, ids: Seq[Int]) = {
+    val idss = node.graph.nodes.map(x => x.node.id)
+    idss.filter(x => !ids.contains(x))
+  }
+  
+  def compare(node: MNode, nodes: Seq[MNode]) = {
+    val nodez = nodes.filter(x => x != node)
+    
+  }
+}

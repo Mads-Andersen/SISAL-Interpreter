@@ -1,0 +1,130 @@
+package parser
+
+import parser._
+import parser.Type._
+import utility._
+
+object CGraph {
+  def getInputEdges(graph: CostGraph) = {
+    Graph.getInputEdges(graph.graph)
+  }
+  
+  def getOutputEdges(graph: CostGraph) = {
+    Graph.getOutputEdges(graph.graph)
+  }
+}
+
+object Graph {
+  def getAll(graph: Graph) = getNodes(graph) ++ getEdges(graph)
+  def getNodes(graph: Graph) = graph.components.collect { case x: PNode => x }
+  def getEdges(graph: Graph) = graph.components.collect { case x: PEdge => x }
+
+  def getInputEdges(graph: Graph) : Edges = {
+    val edges = getEdges(graph)
+    val inputs = edges.filter(x => x.sNode == 0)
+    val sorted = inputs.sortBy(x => (x.sNode, x.sPort))
+    sorted
+  }
+  
+  def getOutputEdges(graph: Graph) : Edges = {
+    val edges = getEdges(graph)
+    val inputs = edges.filter(x => x.dNode == 0)
+    val sorted = inputs.sortBy(x => (x.dNode, x.dPort))
+    sorted
+  }
+  
+  def getInputEdges(graph: Graph, port: Int) : Edges = {
+    getInputEdges(graph).filter(x => x.sPort == port)
+  }
+
+  def getOutputEdge(graph: Graph, port: Int) : Edges = {
+    getOutputEdges(graph).filter(x => x.dPort == port)
+  }
+  
+  def getInputPorts(graph: Graph) = {
+    getInputEdges(graph).map(x => x.sPort)
+  }
+  
+  def getOutputPorts(graph: Graph) = {
+    getOutputEdges(graph).map(x => x.dPort)
+  }
+}
+
+object Edge {
+  def getSourceNode(edge: PEdge, graph: Graph) = {
+    val nodes = graph.components.collect { case x: PNode => x }
+    nodes.find(x => x.id == edge.sNode)
+  }
+
+  def getDestinationNode(edge: PEdge, graph: Graph) = {
+    val nodes = graph.components.collect { case x: PNode => x }
+    nodes.find(x => x.id == edge.dNode)
+  }
+  
+  def lookup(edge: PEdge, env: Environment) = edge match {
+    case x: PREdge => env.find(t => t._1 == x).get._2
+    case x: PLEdge => x.value
+  }
+}
+
+object NodeCost {
+  def getInputEdges(node: CostNode, graph: CostGraph) = {
+    Node.getInputEdges(node.node, graph.graph)
+  }
+  
+  def getOutputEdges(node: CostNode, graph: CostGraph) = {
+    Node.getOutputEdges(node.node, graph.graph)
+  }
+  
+  def getParents(node: CostNode, graph: CostGraph) = {
+    getInputEdges(node, graph).map(x => Edge.getSourceNode(x, graph.graph)).flatten
+  }
+
+  def getChildren(node: CostNode, graph: CostGraph) = {
+    getOutputEdges(node, graph).map(x => Edge.getDestinationNode(x, graph.graph)).flatten
+  }
+} 
+
+object Node {
+  def getInputEdges(node: PNode, graph: Graph) = {
+    val edges = graph.components.collect { case x: PEdge => x }
+    val inputs = edges.filter(x => x.dNode == node.id)
+    val sorted = inputs.sortBy(x => (x.dNode, x.dPort))
+    sorted
+  }
+
+  def getOutputEdges(node: PNode, graph: Graph) = {
+    val edges = graph.components.collect { case x: PEdge => x }
+    val inputs = edges.filter(x => x.sNode == node.id)
+    val sorted = inputs.sortBy(x => (x.sNode, x.sPort))
+    sorted
+  }
+
+  def getInputs(node: PNode, graph: Graph, env: Environment) = {
+    val edges = getInputEdges(node, graph)
+    edges.map(x => Edge.lookup(x, env))
+  }
+
+  def getInput(node: PNode, graph: Graph, port: Int, env: Environment) = {
+    val inputs = getInputs(node, graph, env)
+    inputs(port - 1)
+  }
+
+  def getInputPorts(node: PNode, graph: Graph) = {
+    val edges = getInputEdges(node, graph)
+    edges.map(x => x.dPort)
+  }
+  
+  def getOutputPorts(node: PNode, graph: Graph) = {
+    val edges = getOutputEdges(node, graph)
+    edges.map(x => x.sPort)
+  }
+
+  def getParents(node: PNode, graph: Graph) = {
+    getInputEdges(node, graph).map(x => Edge.getSourceNode(x, graph)).flatten
+  }
+
+  def getChildren(node: PNode, graph: Graph) = {
+    getOutputEdges(node, graph).map(x => Edge.getDestinationNode(x, graph)).flatten
+  }
+}

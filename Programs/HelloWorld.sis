@@ -1,0 +1,10 @@
+
+%
+% Hello World!!!
+%
+
+define main
+
+function main(returns array [Character])
+   "Hello World"
+end function

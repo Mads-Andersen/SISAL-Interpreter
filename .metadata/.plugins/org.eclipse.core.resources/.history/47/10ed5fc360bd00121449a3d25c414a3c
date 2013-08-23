@@ -1,0 +1,107 @@
+package compiler
+
+import java.lang.Boolean
+import scala.collection.mutable.MutableList
+
+trait Component{val meta:MetaInfo}
+trait Node extends Component{
+  val inputEdges:List[Edge]
+  val outputEdges:List[Edge]
+  val label:Int
+  val meta:MetaInfo
+  
+  def addInputEdge(edge:Edge) {
+    inputEdges :+ edge
+  }
+  
+  def addOutputEdge(edge:Edge) {
+    outputEdges :+ edge
+  }
+}
+trait SimpleNode extends Node{
+  val label:Int
+  val meta:MetaInfo
+}
+trait CompoundNode extends Node{
+  val label:Int
+  val components:List[Component]
+  val associationList:List[Int]
+  val meta:MetaInfo
+}
+
+case class NodeAddress(node:Int, port:Int)
+case class Edge(source:Option[NodeAddress], sink:NodeAddress, typeRef:Int, value:Option[Literal], meta:MetaInfo) extends Component
+case class Type(label:Int, tType:TType, meta:MetaInfo) extends Component
+case class GraphBoundary(components:List[Component], typeRef:Int, value:Option[Literal], meta:MetaInfo) extends Component{
+  val source:Node = NGraphSource(0, MetaInfo(List()))
+  val sink:Node = NGraphSink(Int.MaxValue, MetaInfo(List()))
+}
+case class Comment(meta:MetaInfo) extends Component
+case class MetaInfo(values:List[MetaArg])
+
+trait MetaArg
+case class ARSize(value:Int) extends MetaArg
+case class Bounds(low:Int, high:Int) extends MetaArg
+case class ValueByDemand(value:Boolean) extends MetaArg
+case class ValueOrRef(value:Mark.Value) extends MetaArg
+case class Name(value:String) extends MetaArg
+case class OperationNr(value:Int) extends MetaArg
+case class SourceFile(value:String) extends MetaArg
+case class SourceLine(value:Int) extends MetaArg
+case class PointerOrContiguos(value:AllocationStyle.Value) extends MetaArg
+case class PositionXY(x:Int, y:Int) extends MetaArg
+
+trait TType
+case class TArray(typeref:Int) extends TType
+case class TBasic(value:TBasicType) extends TType
+case class TField(typeref1:Int, typeref2:Int) extends TType
+case class TFunction(typeref1:Int, typeref2:Int) extends TType
+case class TMultiple(typeref:Int) extends TType
+case class TRecord(typeref:Int) extends TType
+case class TStream(typeref:Int) extends TType
+case class TTag(typeref1:Int, typeref2:Int) extends TType
+case class TTuple(typeref1:Int, typeref2:Int) extends TType
+case class TUnion(typeref:Int) extends TType
+
+trait TBasicType
+case object TBoolean extends TBasicType
+case object TCharacter extends TBasicType
+case object TDouble extends TBasicType
+case object TInteger extends TBasicType
+case object TNull extends TBasicType
+case object TReal extends TBasicType
+case object TWildBasic extends TBasicType
+
+sealed abstract class Literal
+case class LInteger(value:Int) extends Literal
+case class LDouble(value:Double) extends Literal
+case class LCharacter(value:String) extends Literal
+case class LString(value:String) extends Literal
+case class LBoolean(value:Boolean) extends Literal
+case class LNull() extends Literal
+case class LArray(value:List[List[Literal]]) extends Literal
+case class LStream(value:List[List[Literal]]) extends Literal
+case class LRecord(value:List[Literal]) extends Literal
+case class LUnion(value:(Int, Literal)) extends Literal
+
+object AllocationStyle extends Enumeration {
+  type AllocationStyle = Value
+  val Pointer = Value("Pointer")
+  val Contiguos = Value("Contiguos") 
+}
+
+object Mark extends Enumeration {
+  type Mark = Value
+  val ValueMark = Value("Value")
+  val ReferenceMark = Value("Reference") 
+}
+
+object GraphType extends Enumeration {
+  type GraphType = Value
+  val Local = Value("Local")
+  val Global = Value("Global")
+  val Program = Value("Program")
+  val Imported = Value("Imported")
+}
+
+case class Error(value:String)

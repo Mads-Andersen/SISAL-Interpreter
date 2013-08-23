@@ -1,0 +1,80 @@
+package interpreter
+
+import compiler._
+
+object Utility 
+{
+  def getTypes(components: Seq[Component]): Map[Int,Type] = {
+    components.foldLeft(Map[Int,Type]()) { (map, component) =>
+      component match {
+        case t: Type => map + (t.label -> t)
+        case _ => map
+      }
+    }
+  }
+
+  def getPNodes(components: Seq[Component]): Seq[Node] = {
+    components.foldLeft(List[Node]()) { (nodes, component) =>
+      component match {
+        case n: Node => nodes :+ n
+        case _ => nodes
+      }
+    }
+  }
+  
+  def getPSimpleNodes(components: Seq[Component]): Seq[SimpleNode] = {
+    components.foldLeft(List[SimpleNode]()) { (nodes, component) =>
+      component match {
+        case n: PSimpleNode => nodes :+ n
+        case _ => nodes
+      }
+    }
+  }
+  
+  def getPCompoundNodes(components: Seq[Component]): Seq[Node] = {
+    components.foldLeft(List[Node]()) { (nodes, component) =>
+      component match {
+        case n: CompoundNode => nodes :+ n
+        case _ => nodes
+      }
+    }
+  }
+  
+  def getPEdges(components: Seq[Component]): Seq[Edge] = {
+    components.foldLeft(List[Edge]()) { (edges, component) =>
+      component match {
+        case e: Edge => edges :+ e
+        case _ => edges
+      }
+    }
+  }
+  
+  def getPRegularEdges(components: Seq[Component]): Seq[RegularEdge] = {
+    components.foldLeft(List[RegularEdge]()) { (edges, component) =>
+      component match {
+        case e: RegularEdge => edges :+ e
+        case _ => edges
+      }
+    }
+  }
+  
+  def getPLiteralEdges(components: Seq[Component]): Seq[LiteralEdge] = {
+    components.foldLeft(List[LiteralEdge]()) { (edges, component) =>
+      component match {
+        case e: LiteralEdge => edges :+ e
+        case _ => edges
+      }
+    }
+  }
+  
+  def addEdgeToSink(edge:Edge, nodes:Map[Int,Node]) : Unit = {
+    var sinkNode = edge.sinkNode
+    if(sinkNode == 0) sinkNode = Constant.GraphSinkNode 
+    val sink = nodes(sinkNode).inputEdges :+ edge
+  }
+  
+  def addEdgeToSource(edge:Edge, nodes:Map[Int,Node]) : Unit = {
+    if(edge.sourceNode == Constant.LiteralSourceNode) return
+    val source = nodes(edge.sourceNode).outputEdges :+ edge
+  }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/Mads/scalgorithms-read-only"/>
+			<item value="/Users/Mads/scalgorithms-read-only/src"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1200" key="dialogWidth"/>
+		<item value="true" key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="675" key="dialogHeight"/>
+		<item value="450" key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH"/>
+		<item value="false" key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION"/>
+		<item value="441" key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_HEIGHT"/>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.actions"/>
+		</list>
+		<list key="textArray">
+			<item value="run con"/>
+		</list>
+		<list key="orderedElements">
+			<item value="org.eclipse.debug.ui.actions.OpenRunConfigurations"/>
+		</list>
+		<list key="textEntries">
+			<item value="1"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="58" key="DIALOG_Y_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="992" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="16" key="DIALOG_X_ORIGIN"/>
+		<item value="652" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.scala-ide.sdt.core.wizards.newObject" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.scala-ide.sdt.core.wizards"/>
+		</list>
+	</section>
+	<section name="ShowViewDialog">
+		<item value="308" key="DIALOG_WIDTH"/>
+		<item value="scala.tools.eclipse.scalatest.ui.ScalaTestResultView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="113" key="DIALOG_Y_ORIGIN"/>
+		<item value="415" key="DIALOG_HEIGHT"/>
+		<item value="484" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.scala-ide.sdt.core.viewCategory"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+</section>

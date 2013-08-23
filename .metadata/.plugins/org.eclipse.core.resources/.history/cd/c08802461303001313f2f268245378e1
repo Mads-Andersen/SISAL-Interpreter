@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/62/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp
+END
+TestCSP_ValVarFwdChkAC3Heuristic.scala
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/62/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestCSP_ValVarFwdChkAC3Heuristic.scala
+END
+TestCSP_MapColoring.scala
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/57/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestCSP_MapColoring.scala
+END
+TestCSP_VarAndValHeuristic.scala
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/56/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestCSP_VarAndValHeuristic.scala
+END
+TestCSP_VarSelectionHeuristic.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/56/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestCSP_VarSelectionHeuristic.scala
+END
+TestDomain.scala
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/58/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestDomain.scala
+END
+TestCSP_ValVarFwdChkHeuristic.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/56/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestCSP_ValVarFwdChkHeuristic.scala
+END
+TestAssignment.scala
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/49/trunk/src/test/scala/net/pragyah/scalgorithms/aima/search/csp/TestAssignment.scala
+END

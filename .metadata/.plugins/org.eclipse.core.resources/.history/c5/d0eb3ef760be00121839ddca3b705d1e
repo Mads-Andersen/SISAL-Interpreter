@@ -1,0 +1,46 @@
+package interpreter
+
+import compiler._
+
+object Interpreter {
+
+  def buildGraph() { 
+    val components = compiler.Parser.parseFile("src/compiler/TestFiles/Mix")
+	val types = Utility.getTypes(components)
+	val graphs = createGraphs(components)
+	graphs.foreach(x => println(x))
+	
+	val g1 = graphs(1)
+	val n1 = g1.nodes(2)
+	val i = g1.getInputEdges(n1)
+	println(i(0))
+	graphs(1).nodes(2)
+  }
+  
+  def createGraphs(components:Seq[Component]) : Seq[GraphEnvironment] = {
+    components.foldLeft(List[GraphEnvironment]()){(graphs, component) =>
+      component match {
+        case x:LocalGraph => graphs :+ createGraph(x.components)
+        case x:GlobalGraph => graphs :+ createGraph(x.components)
+        case x:PCompoundNode => graphs :+ createGraph(x.getGraphs)
+        case _ => graphs
+      }
+    }
+  }
+  
+  def createGraph(components:Seq[Component]) : GraphEnvironment = {
+    val source = NGraphSource(Constant.GraphSourceNode, MetaInfo(List()))
+	val sink = NGraphSink(Constant.GraphSinkNode, MetaInfo(List()))
+	val nodes = List(source) ++ (Utility.getPNodes(components) :+ sink)
+	val edges = Utility.getPEdges(components).sortBy(e => (e.sourceNode, e.sourcePort, e.sinkNode, e.sinkPort))
+	val nodesMap = nodes.foldLeft(Map[Int,Node]()){(map, node) => map + (node.id -> node)}
+	
+    edges.foreach(e => Utility.addEdgeToSource(e, nodesMap))
+    edges.foreach(e => Utility.addEdgeToSink(e, nodesMap))
+	GraphEnvironment(source, sink, nodes, edges, createGraphs(components))
+  }
+  
+  def main(args: Array[String]) {
+	 buildGraph()
+  }
+}

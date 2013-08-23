@@ -1,0 +1,226 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376284826274
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1376284855500
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376284856085
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376284856211
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376284993550
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285068052
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285103880
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285105658
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285133592
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285207055
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1376285213010
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285214540
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285605804
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285606149
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285607208
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285607408
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285831924
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376285833431
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285838680
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.import",1376285896567
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.import",1376285896567
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285898341
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376285898378
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376285904144
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285912092
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.import",1376285940958
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.import",1376285940958
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285942231
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376285942870
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376285943869
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376285953593
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285954856
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285958296
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285958679
+started,bundle,org.eclipse.jst.j2ee.core,1.2.102.v201202090300,"org.eclipse.jst.j2ee.core",1376285961846
+started,bundle,org.eclipse.jem,2.0.501.v201111030500,"org.eclipse.jem",1376285961875
+started,bundle,org.eclipse.wst.xml.core,1.1.602.v201201091944,"org.eclipse.wst.xml.core",1376285961997
+started,bundle,org.eclipse.wst.validation,1.2.303.v201202090300,"org.eclipse.wst.validation",1376285962045
+started,bundle,org.eclipse.jst.j2ee,1.1.503.v201202090300,"org.eclipse.jst.j2ee",1376285962105
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.300.v201104272153,"org.eclipse.wst.jsdt.manipulation",1376285963146
+started,bundle,org.eclipse.wst.jsdt.core,1.1.102.v201111090634,"org.eclipse.wst.jsdt.core",1376285963722
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui",1376285963816
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376285964301
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1376285964424
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376285968519
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1376285997761
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1376285998045
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286038157
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/all-wcprops.",1376286045281
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/entries.",1376286045289
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/text-base/TestMergeSort.scala.svn-base.",1376286045292
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/text-base/TestQuickSort.scala.svn-base.",1376286045294
+error,log,,,"Internal Error",1376286045796
+error,log,,,"Problems encountered while deleting resources.",1376286045799
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286050892
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1376286051012
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286067739
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/all-wcprops.",1376286070674
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/entries.",1376286070728
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/text-base/TestMergeSort.scala.svn-base.",1376286070731
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/test/scala/net/pragyah/scalgorithms/sorting/.svn/text-base/TestQuickSort.scala.svn-base.",1376286070733
+error,log,,,"Internal Error",1376286071168
+error,log,,,"Problems encountered while deleting resources.",1376286071186
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286073035
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1376286073163
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286081827
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286120076
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.properties",1376286120188
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286124445
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/main/scala/net/pragyah/scalgorithms/.svn/all-wcprops.",1376286126907
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/main/scala/net/pragyah/scalgorithms/.svn/entries.",1376286127157
+error,log,,,"Internal Error",1376286127355
+error,log,,,"Problems encountered while deleting resources.",1376286127357
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286128645
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1376286128778
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286131383
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286141306
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286151494
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286153516
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1376286153624
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286162137
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/main/scala/net/pragyah/scalgorithms/disjointsets/.svn/all-wcprops.",1376286165195
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/main/scala/net/pragyah/scalgorithms/disjointsets/.svn/entries.",1376286165242
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/main/scala/net/pragyah/scalgorithms/disjointsets/.svn/text-base/Core.scala.svn-base.",1376286165244
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/main/scala/net/pragyah/scalgorithms/disjointsets/.svn/text-base/DisjointSetForest.scala.svn-base.",1376286165246
+error,log,,,"Internal Error",1376286165612
+error,log,,,"Problems encountered while deleting resources.",1376286165627
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286166906
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1376286167023
+error,log,,,"Error during askOption",1376286172760
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286173130
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286173277
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286189407
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286190999
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286191164
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286193270
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286193793
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286194012
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286197759
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286198366
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286198705
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286210794
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286269152
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286269392
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286276017
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286276357
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286278644
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286278810
+closed,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286278811
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286278957
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286279387
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286279608
+closed,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286279608
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286279758
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286280346
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286280507
+closed,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286280507
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286280615
+closed,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286280615
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286282912
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.refresh",1376286285825
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286293503
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286343229
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286345924
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1376286354895
+started,bundle,org.eclipse.wst.xsl.debug.ui,1.0.200.v201101281837,"org.eclipse.wst.xsl.debug.ui",1376286356281
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286361073
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286400972
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286401316
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286430112
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286430508
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1376286441074
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1376286445404
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286447397
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286465088
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286465427
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1376286472528
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286474459
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286491537
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286510180
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286515415
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286528232
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286532319
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286549660
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286566099
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286575516
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286592111
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.import",1376286592264
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.import",1376286592264
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286606384
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286606522
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286620055
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286635192
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286635323
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286638651
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286640451
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286641965
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286643290
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286650673
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286652385
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286652497
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286656173
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286658358
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286658479
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286678305
+opened,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286681757
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1376286681875
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1376286693962
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1376286701617
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/all-wcprops.",1376286705148
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/entries.",1376286705164
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/prop-base/.classpath.svn-base.",1376286705167
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/prop-base/.project.svn-base.",1376286705176
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/prop-base/pom.xml.svn-base.",1376286705179
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/text-base/.classpath.svn-base.",1376286705198
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/text-base/.project.svn-base.",1376286705201
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/.svn/text-base/pom.xml.svn-base.",1376286705206
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/.svn/all-wcprops.",1376286705210
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/.svn/entries.",1376286705212
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/.svn/all-wcprops.",1376286705215
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/.svn/entries.",1376286705217
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/.svn/all-wcprops.",1376286705221
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/.svn/entries.",1376286705224
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/.svn/all-wcprops.",1376286705299
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/.svn/entries.",1376286705301
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/.svn/all-wcprops.",1376286705310
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/.svn/entries.",1376286705312
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/.svn/all-wcprops.",1376286705332
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/.svn/entries.",1376286705335
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/.svn/all-wcprops.",1376286705351
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/.svn/entries.",1376286705357
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/agent/.svn/all-wcprops.",1376286705362
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/agent/.svn/entries.",1376286705364
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/all-wcprops.",1376286705366
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/entries.",1376286705368
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/text-base/Action.scala.svn-base.",1376286705371
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/text-base/Game.scala.svn-base.",1376286705379
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/text-base/Player.scala.svn-base.",1376286705381
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/text-base/State.scala.svn-base.",1376286705383
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/game/.svn/text-base/TicTacToe.scala.svn-base.",1376286705390
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/.svn/all-wcprops.",1376286705447
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/.svn/entries.",1376286705450
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/all-wcprops.",1376286705453
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/entries.",1376286705473
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/text-base/CNFTransformer.scala.svn-base.",1376286705476
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/text-base/Core.scala.svn-base.",1376286705478
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/text-base/Equivalences.scala.svn-base.",1376286705480
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/text-base/KnowledgeBase.scala.svn-base.",1376286705506
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/.svn/text-base/Model.scala.svn-base.",1376286705508
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/all-wcprops.",1376286705561
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/entries.",1376286705570
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/text-base/BackwardChaining.scala.svn-base.",1376286705573
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/text-base/ForwardChaining.scala.svn-base.",1376286705576
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/text-base/InferenceAlgorithm.scala.svn-base.",1376286705599
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/text-base/Resolution.scala.svn-base.",1376286705614
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/.svn/text-base/TruthTable.scala.svn-base.",1376286705640
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/sentence/.svn/all-wcprops.",1376286705666
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/sentence/.svn/entries.",1376286705676
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/.svn/all-wcprops.",1376286705678
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/.svn/entries.",1376286705680
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/.svn/all-wcprops.",1376286705686
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/.svn/entries.",1376286705698
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/.svn/text-base/Assignment.scala.svn-base.",1376286705722
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/.svn/text-base/CSP.scala.svn-base.",1376286705725
+error,log,,,"Could not move: /Users/Mads/Dropbox/Master Thesis/Code/Compiler/GraphHelper/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/.svn/text-base/Constraint.scala.svn-base.",1376286705733

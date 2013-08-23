@@ -1,0 +1,23 @@
+package interpreter
+
+import parser._
+import parser.Type._
+import partitioner.GraphExpansion
+import partitioner.CostAssignment
+
+object InterpreterPar {
+
+  def eval(program: Program) : GraphResult = {
+    
+    //Partitioner.program = program    
+    val graphs = CostAssignment.assign(program)
+    val partitions = GraphExpansion.partition(graphs)
+    val mapped = graphs.zip(partitions)
+    mapped.last
+    //val subgraphs = GraphExpansion.part(main)
+    //Interpreter.eval(subgraphs(0), program.arguments)
+    //val tasks = Algorithm.partition(main)
+    //Interpreter.eval(tasks(0), program.arguments)
+    ???
+  }
+}

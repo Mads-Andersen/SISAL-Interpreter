@@ -1,0 +1,60 @@
+package partitioner
+
+import parser.Type._
+import parser._
+import interpreter.TopologicalSort
+import interpreter._
+import utility.GraphPrinter
+
+object Hej {
+
+  def convert(graphs: CostGraphs) : Int = {
+    val superNodes = graphs
+    val superEdges = superNodes.map(x => super_edges(x, graphs)).flatten
+    val sources = findStartGraphs(superNodes, superEdges)
+    sources.map(x => CriticalPath.bellman_ford(superNodes, superEdges, x)).max
+  }
+  
+  def super_edges(supernode: SuperNode, supernodes: SuperNodes) = {
+    val nodes = supernode.nodes.map(x => x.node.id)
+    val parentEdges = supernode.edges.filter(x => !nodes.contains(x.sNode)).filter(x => x.sNode != 0 || x.sNode != Constant.LiteralSourceNode)
+    val parentIds = parentEdges.map(x => x.sNode)
+    val parentNodes = parents(supernode, supernodes, parentIds)
+    val childrenEdges = supernode.edges.filter(x => !nodes.contains(x.dNode))
+    val childrenIds = childrenEdges.map(x => x.dNode)
+    val childrenNodes = children(supernode, supernodes, childrenIds)
+    val psEdges = parentNodes.map(x => SuperEdge(x, supernode))
+    val csEdges = childrenNodes.map(x => SuperEdge(supernode, x))
+    psEdges ++ csEdges
+  }
+  
+  def parents(node: SuperNode, nodes: SuperNodes, parentIDs: IDs) = {
+    val rest = nodes.filter(x => x != node)
+    val parents = rest.filter(x => parentIDs.contains(x.nodes.map(x => x.node.id)))
+    parents
+  }
+  
+  def children(node: SuperNode, nodes: SuperNodes, childrenIDs: IDs) = {
+    val rest = nodes.filter(x => x != node)
+    val children = rest.filter(x => childrenIDs.contains(x.nodes.map(x => x.node.id)))
+    children
+  }
+  
+  def findStartGraphs(nodes: SuperNodes, edges: SuperEdges) = {
+    val sinks = edges.map(x => x.sink)
+    val starts = nodes.diff(sinks)
+    starts
+  }
+  
+  def findParents(node: SuperNode, edges: SuperEdges) = {
+    val parentEdges = edges.filter(x => x.sink == node)
+    val parents = parentEdges.map(x => x.source)
+    parents
+  }
+  
+  def findChildren(node: SuperNode, edges: SuperEdges) = {
+    val childrenEdges = edges.filter(x => x.source == node)
+    val children = childrenEdges.map(x => x.sink)
+    children
+  }
+}

@@ -1,0 +1,12 @@
+#encoding=UTF-8
+#version=1
+org.eclipse.persistence.jpa.jpql.source,1.0.1.v20111125-r10461,file:/Applications/eclipse-indigo/plugins/org.eclipse.persistence.jpa.jpql.source_1.0.1.v20111125-r10461.jar,-1,false
+org.eclipse.rse.useractions.source,1.1.300.v201101042155,file:/Applications/eclipse-indigo/plugins/org.eclipse.rse.useractions.source_1.1.300.v201101042155.jar,-1,false
+org.scala-ide.play2.source,0.3.0.v-2_10-201306071244-e442f75,file:/Applications/eclipse-indigo/plugins/org.scala-ide.play2.source_0.3.0.v-2_10-201306071244-e442f75.jar,-1,false
+org.scala-ide.sdt.aspects.source,3.0.1.rc01-2_10-201306070828-c608228,file:/Applications/eclipse-indigo/plugins/org.scala-ide.sdt.aspects.source_3.0.1.rc01-2_10-201306070828-c608228.jar,-1,false
+org.scala-ide.sdt.core.source,3.0.1.rc01-2_10-201306070828-c608228,file:/Applications/eclipse-indigo/plugins/org.scala-ide.sdt.core.source_3.0.1.rc01-2_10-201306070828-c608228.jar,-1,false
+org.scala-ide.sdt.debug.source,3.0.1.rc01-2_10-201306070828-c608228,file:/Applications/eclipse-indigo/plugins/org.scala-ide.sdt.debug.source_3.0.1.rc01-2_10-201306070828-c608228.jar,-1,false
+org.scala-ide.sdt.editor.source,0.3.0.v-2_10-201306071244-e442f75,file:/Applications/eclipse-indigo/plugins/org.scala-ide.sdt.editor.source_0.3.0.v-2_10-201306071244-e442f75.jar,-1,false
+org.scala-ide.sdt.scalatest.source,2.9.3.v-3-2_10-201306071414-94cf95e,file:/Applications/eclipse-indigo/plugins/org.scala-ide.sdt.scalatest.source_2.9.3.v-3-2_10-201306071414-94cf95e.jar,-1,false
+org.scala.tools.eclipse.search.source,0.1.0.v-2_10-201306071255-0121a0e,file:/Applications/eclipse-indigo/plugins/org.scala.tools.eclipse.search.source_0.1.0.v-2_10-201306071255-0121a0e.jar,-1,false
+org.scalaide.worksheet.source,0.2.0.v-2_10-201306070833-9ffc07d,file:/Applications/eclipse-indigo/plugins/org.scalaide.worksheet.source_0.2.0.v-2_10-201306070833-9ffc07d.jar,-1,false

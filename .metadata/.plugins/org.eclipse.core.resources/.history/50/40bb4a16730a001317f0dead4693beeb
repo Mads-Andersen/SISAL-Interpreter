@@ -1,0 +1,13 @@
+package partitioner
+
+import parser._
+import parser.Type._
+
+object Algorithms {
+
+  def criticalPath() = {
+    
+  }
+  
+  
+}

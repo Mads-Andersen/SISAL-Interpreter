@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/68/trunk/src/main/scala/net/pragyah/scalgorithms/aima/game
+END
+Action.scala
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/65/trunk/src/main/scala/net/pragyah/scalgorithms/aima/game/Action.scala
+END
+TicTacToe.scala
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/68/trunk/src/main/scala/net/pragyah/scalgorithms/aima/game/TicTacToe.scala
+END
+State.scala
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/65/trunk/src/main/scala/net/pragyah/scalgorithms/aima/game/State.scala
+END
+Game.scala
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/65/trunk/src/main/scala/net/pragyah/scalgorithms/aima/game/Game.scala
+END
+Player.scala
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/65/trunk/src/main/scala/net/pragyah/scalgorithms/aima/game/Player.scala
+END

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;compiler&apos; to &apos;Compiler/src&apos;&#x0A;- Original project: &apos;BlueBob&apos;&#x0A;- Destination element: &apos;Compiler/src&apos;&#x0A;- Original element: &apos;BlueBob/src/compiler&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=Compiler/src" element1="/src&lt;compiler" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1364780101373" version="1.0"/>
+</session>

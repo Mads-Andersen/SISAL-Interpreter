@@ -1,0 +1,38 @@
+T 1 1 0    %na=Boolean
+T 2 1 1    %na=Character
+T 3 1 2    %na=Double
+T 4 1 3    %na=Integer
+T 5 1 4    %na=Null
+T 6 1 5    %na=Real
+T 7 1 6    %na=WildBasic
+T 8 10
+T 9 8	4	0
+T 10 8	4	9
+T 11 8	4	10
+T 12 8	4	11
+T 13 3	12	9
+C$  F Livermore Frontend   Version1.8
+G	13	"f"	%sl=2	%sf=../Programs/Select.sis
+N 1	141	%sl=4	%sf=../Programs/Select.sis
+E	0 1	1 1	4	 %na=a	%mk=V	%sl=4
+E	0 2	1 2	4	 %na=b	%mk=V	%sl=4
+N 2	141	%sl=4	%sf=../Programs/Select.sis
+E	0 3	2 1	4	 %na=c	%mk=V	%sl=4
+E	0 4	2 2	4	 %na=d	%mk=V	%sl=4
+N 3	131	%sl=4	%sf=../Programs/Select.sis
+E	1 1	3 1	4	%mk=V
+E	2 1	3 2	4	%mk=V
+{ Compound   4   5
+G	0	%sl=5	%sf=../Programs/Select.sis
+E	0 2	0 1	4	 %na=a	%mk=V	%sl=5
+E	0 3	0 2	4	 %na=b	%mk=V	%sl=5
+G	0	%sl=6	%sf=../Programs/Select.sis
+E	0 4	0 1	4	 %na=c	%mk=V	%sl=7
+E	0 5	0 2	4	 %na=d	%mk=V	%sl=7
+} 4 5 2 0 1	%sl=5	%sf=../Programs/Select.sis
+E	3 1	4 1	1	%mk=V
+E	0 1	4 2	4	 %na=a	%mk=V	%sl=5
+E	0 2	4 3	4	 %na=b	%mk=V	%sl=5
+E	0 3	4 4	4	 %na=c	%mk=V	%sl=7
+E	0 4	4 5	4	 %na=d	%mk=V	%sl=7
+L		0 1	7 "error"	%mk=V

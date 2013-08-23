@@ -1,0 +1,11 @@
+import g( I, J : integer returns integer )
+function f( A, B, C, D : integer returns integer )
+	let X, Y :=
+		if A+B < C+D then
+			A, B
+		else
+			C, D
+		end if
+	in g( X, Y )
+	end let
+end function % f

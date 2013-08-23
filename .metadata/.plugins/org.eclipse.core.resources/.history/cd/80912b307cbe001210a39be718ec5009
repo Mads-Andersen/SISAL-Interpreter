@@ -1,0 +1,110 @@
+package compiler
+
+abstract class Component{val meta:MetaInfo}
+abstract class Node(label:Int, meta:MetaInfo) extends Component {
+  def id = label
+  def metaInfo = meta
+  var inputEdges = List[Edge]()
+  var outputEdges = List[Edge]()
+}
+abstract class Edge(sNode:Int, sPort:Int, dNode:Int, dPort:Int) extends Component {
+  def sourceNode = sNode
+  def sourcePort = sPort
+  def sinkNode = dNode
+  def sinkPort = dPort
+}
+abstract class SimpleNode(label:Int, meta:MetaInfo) extends Node(label, meta)
+abstract class CompoundNode(label:Int, graphs:Seq[LocalGraph], associationList:Seq[Int], meta:MetaInfo) extends Node(label, meta) {
+  def getId = label
+  def getGraphs = graphs
+  def getAssociationList = associationList
+  def getMeta = meta
+}
+case class RegularEdge(sNode:Int, sPort:Int, dNode:Int, dPort:Int, typeData:TypeData, meta:MetaInfo) extends Edge(sNode, sPort, dNode, dPort)
+case class LiteralEdge(sNode:Int, sPort:Int, dNode:Int, dPort:Int, typeData:TypeData, meta:MetaInfo) extends Edge(sNode, sPort, dNode, dPort)
+case class Type(label:Int, tType:TType, meta:MetaInfo) extends Component
+case class LocalGraph(components:Seq[Component], typeData:TypeData, meta:MetaInfo) extends Component
+case class GlobalGraph(components:Seq[Component], typeData:TypeData, meta:MetaInfo) extends Component
+case class ImportedGraph(typeData:TypeData, meta:MetaInfo) extends Component
+case class Comment(meta:MetaInfo) extends Component
+case class MetaInfo(values:List[MetaArg])
+
+case class TypeData(typeId:Int, value:Literal)
+case class GraphEnvironment(source:Node, sink:Node, nodes:Seq[Node], edges:Seq[Edge], graphs:Seq[GraphEnvironment]){
+  
+  def getInputEdges(node:Node) = {
+    edges.foldLeft(List[Edge]())((edges, edge) => if(edge.sinkNode == node.id) edges :+ edge else edges)
+  }
+  
+  def getOutputEdges(node:Node) = {
+    edges.foldLeft(List[Edge]())((edges, edge) => if(edge.sourceNode == node.id) edges :+ edge else edges)
+  }
+}
+
+abstract class MetaArg
+case class ARSize(value:Int) extends MetaArg
+case class Bounds(low:Int, high:Int) extends MetaArg
+case class ValueByDemand(value:Boolean) extends MetaArg
+case class ValueOrRef(value:Mark.Value) extends MetaArg
+case class Name(value:String) extends MetaArg
+case class OperationNr(value:Int) extends MetaArg
+case class SourceFile(value:String) extends MetaArg
+case class SourceLine(value:Int) extends MetaArg
+case class PointerOrContiguos(value:AllocationStyle.Value) extends MetaArg
+case class PositionXY(x:Int, y:Int) extends MetaArg
+
+abstract class TType
+case class TArray(typeref:Int) extends TType
+case class TBasic(value:TBasicType) extends TType
+case class TField(typeref1:Int, typeref2:Int) extends TType
+case class TFunction(typeref1:Int, typeref2:Int) extends TType
+case class TMultiple(typeref:Int) extends TType
+case class TRecord(typeref:Int) extends TType
+case class TStream(typeref:Int) extends TType
+case class TTag(typeref1:Int, typeref2:Int) extends TType
+case class TTuple(typeref1:Int, typeref2:Int) extends TType
+case class TUnion(typeref:Int) extends TType
+
+abstract class TBasicType
+case object TBoolean extends TBasicType
+case object TCharacter extends TBasicType
+case object TDouble extends TBasicType
+case object TInteger extends TBasicType
+case object TNull extends TBasicType
+case object TReal extends TBasicType
+case object TWildBasic extends TBasicType
+
+abstract class Literal
+case class LEmpty() extends Literal
+case class LInteger(value:Int) extends Literal
+case class LDouble(value:Double) extends Literal
+case class LCharacter(value:String) extends Literal
+case class LString(value:String) extends Literal
+case class LBoolean(value:Boolean) extends Literal
+case class LNull() extends Literal
+case class LArray(value:List[List[Literal]]) extends Literal
+case class LStream(value:List[List[Literal]]) extends Literal
+case class LRecord(value:List[Literal]) extends Literal
+case class LUnion(value:(Int, Literal)) extends Literal
+
+object AllocationStyle extends Enumeration {
+  type AllocationStyle = Value
+  val Pointer = Value("Pointer")
+  val Contiguos = Value("Contiguos") 
+}
+
+object Mark extends Enumeration {
+  type Mark = Value
+  val ValueMark = Value("Value")
+  val ReferenceMark = Value("Reference") 
+}
+
+object Constant {
+  val GraphSourceNode = 0
+  val GraphSinkNode = Int.MaxValue
+  val GraphSinkNodeType = Int.MaxValue
+  val LiteralSourceNode = Int.MaxValue-1
+  val LiteralSourcePort = Int.MaxValue-1
+}
+
+case class Error(value:String)

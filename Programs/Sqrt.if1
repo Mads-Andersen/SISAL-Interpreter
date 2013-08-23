@@ -1,0 +1,122 @@
+T 1 1 0    %na=Boolean
+T 2 1 1    %na=Character
+T 3 1 2    %na=Double
+T 4 1 3    %na=Integer
+T 5 1 4    %na=Null
+T 6 1 5    %na=Real
+T 7 1 6    %na=WildBasic
+T 8 10
+T 9 6	4    %na=si
+T 10 8	4	0
+T 11 8	9	0
+T 12 3	10	11
+T 13 8	4	11
+T 14 8	7	13
+T 15 8	5	14
+T 16 3	11	15
+T 17 4	4
+T 18 8	6	0
+T 19 8	6	18
+T 20 3	19	18
+T 21 3	0	11
+C$  F Livermore Frontend   Version1.8
+G	12	"OddIntegers"	%sl=5	%sf=../Programs/Sqrt.sis
+{ Compound   1   4
+G	0	%sl=6	%sf=../Programs/Sqrt.sis
+L		0 2	4 "3"	 %na=i	%mk=V	%sl=7
+G	0	%sl=8	%sf=../Programs/Sqrt.sis
+N 1	132	%sl=8	%sf=../Programs/Sqrt.sis
+E	0 2	1 1	4	 %na=i	%mk=V	%sl=8
+E	0 1	1 2	4	 %na=limit	%mk=V	%sl=8
+E	1 1	0 1	1	%mk=V
+G	0	%sl=10	%sf=../Programs/Sqrt.sis
+N 1	141	%sl=10	%sf=../Programs/Sqrt.sis
+E	0 2	1 1	4	 %na=old-i	%mk=V	%sl=10
+L		1 2	4 "2"	%mk=V
+E	1 1	0 2	4	 %na=i	%mk=V	%sl=10
+G	0	%sl=11	%sf=../Programs/Sqrt.sis
+N 1	132	%sl=11	%sf=../Programs/Sqrt.sis
+E	0 2	1 1	4	 %na=i	%mk=V	%sl=11
+E	0 1	1 2	4	 %na=limit	%mk=V	%sl=11
+N 2	107	%sl=12	%sf=../Programs/Sqrt.sis
+L		2 1	4 "1"	%mk=V
+E	0 2	2 2	4	 %na=i	%mk=V	%sl=11
+E	1 1	2 3	1	%mk=V
+E	2 1	0 1	9	%mk=V
+} 1 4 4 0 1 2 3	%sl=6	%sf=../Programs/Sqrt.sis
+E	0 1	1 1	4	 %na=limit	%mk=V	%sl=8
+E	1 1	0 1	9	%mk=V
+G	16	"Filter"	%sl=15	%sf=../Programs/Sqrt.sis
+N 1	110	%sl=17	%sf=../Programs/Sqrt.sis
+E	0 1	1 1	9	 %na=s	%mk=V	%sl=16
+{ Compound   2   0
+G	0	%sl=17	%sf=../Programs/Sqrt.sis
+N 1	114	%sl=17	%sf=../Programs/Sqrt.sis
+E	0 1	1 1	9	 %na=s	%mk=V	%sl=16
+E	1 1	0 2	17	 %na=i	%mk=V
+E	1 2	0 3	17	%mk=V
+G	0	%sl=17	%sf=../Programs/Sqrt.sis
+N 1	136	%sl=17	%sf=../Programs/Sqrt.sis
+E	0 2	1 1	4	 %na=i	%mk=V	%sl=17
+L		1 2	4 "1"	%mk=V
+N 2	124	%sl=17	%sf=../Programs/Sqrt.sis
+E	1 1	2 1	4	%mk=V
+L		2 2	4 "0"	%mk=V
+E	2 1	0 4	1	 %na=multiple	%mk=V	%sl=17
+G	0	%sl=17	%sf=../Programs/Sqrt.sis
+N 1	139	%sl=19	%sf=../Programs/Sqrt.sis
+E	0 4	1 1	1	 %na=multiple	%mk=V	%sl=18
+N 2	107	%sl=19	%sf=../Programs/Sqrt.sis
+L		2 1	4 "1"	%mk=V
+E	0 2	2 2	4	 %na=i	%mk=V	%sl=18
+E	1 1	2 3	1	%mk=V
+E	2 1	0 1	9	%mk=V
+} 2 0 3 0 1 2	%sl=17	%sf=../Programs/Sqrt.sis
+E	0 1	2 1	9	 %na=s	%mk=V	%sl=17
+E	2 1	0 1	9	%mk=V
+G	20	"Sqrt"	%sl=22	%sf=../Programs/Sqrt.sis
+{ Compound   1   4
+G	0	%sl=23	%sf=../Programs/Sqrt.sis
+N 1	122	%sl=24	%sf=../Programs/Sqrt.sis
+E	0 1	1 1	6	 %na=x	%mk=V	%sl=24
+L		1 2	6 "2.0"	%mk=V
+E	1 1	0 3	6	 %na=root	%mk=V	%sl=24
+G	0	%sl=25	%sf=../Programs/Sqrt.sis
+N 1	152	%sl=25	%sf=../Programs/Sqrt.sis
+E	0 3	1 1	6	 %na=root	%mk=V	%sl=25
+E	0 3	1 2	6	 %na=root	%mk=V	%sl=25
+N 2	135	%sl=25	%sf=../Programs/Sqrt.sis
+E	0 1	2 1	6	 %na=x	%mk=V	%sl=25
+E	1 1	2 2	6	%mk=V
+N 3	117	%sl=25	%sf=../Programs/Sqrt.sis
+E	2 1	3 1	6	%mk=V
+N 4	131	%sl=25	%sf=../Programs/Sqrt.sis
+E	3 1	4 1	6	%mk=V
+E	0 2	4 2	6	 %na=eps	%mk=V	%sl=25
+N 5	139	%sl=25	%sf=../Programs/Sqrt.sis
+E	4 1	5 1	1	%mk=V
+E	5 1	0 1	1	%mk=V
+G	0	%sl=27	%sf=../Programs/Sqrt.sis
+N 1	122	%sl=27	%sf=../Programs/Sqrt.sis
+E	0 1	1 1	6	 %na=x	%mk=V	%sl=27
+E	0 3	1 2	6	 %na=old-root	%mk=V	%sl=27
+N 2	141	%sl=27	%sf=../Programs/Sqrt.sis
+E	1 1	2 1	6	%mk=V
+E	0 3	2 2	6	 %na=old-root	%mk=V	%sl=27
+N 3	122	%sl=27	%sf=../Programs/Sqrt.sis
+E	2 1	3 1	6	%mk=V
+L		3 2	6 "2.0"	%mk=V
+E	3 1	0 3	6	 %na=root	%mk=V	%sl=27
+G	0	%sl=28	%sf=../Programs/Sqrt.sis
+N 1	127	%sl=29	%sf=../Programs/Sqrt.sis
+E	0 3	1 1	6	 %na=root	%mk=V	%sl=28
+E	1 1	0 1	6	%mk=V
+} 1 4 4 0 1 2 3	%sl=23	%sf=../Programs/Sqrt.sis
+E	0 1	1 1	6	 %na=x	%mk=V	%sl=24
+E	0 2	1 2	6	 %na=eps	%mk=V	%sl=25
+E	1 1	0 1	6	%mk=V
+X	21	"main"	%sl=32	%sf=../Programs/Sqrt.sis
+N 1	120	%sl=33	%sf=../Programs/Sqrt.sis
+L		1 1	12 "OddIntegers"	%mk=V
+L		1 2	4 "10"	%mk=V
+E	1 1	0 1	9	%mk=V

@@ -1,0 +1,251 @@
+package tests
+
+import org.scalatest.FunSuite
+import org.scalatest.FeatureSpec
+import parser._
+import utility._
+import interpreter._
+
+class ExpressionsTest extends FunSuite {
+  test("true & true") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) true & true""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    println(values)
+    assert(values(0) == LBoolean(true))
+  }
+  test("true & false") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) true & false""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("false & true") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) false & true""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("false & false") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) false & false""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  
+  
+  test("true | false") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) true | false""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("false | true") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) false | true""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("false | false") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) false | false""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("true | true") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) true | true""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  
+  
+  test("~true") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) ~true""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("~false") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) ~false""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  
+  
+  test("5 < 9") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 < 9""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("5 < 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 < 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("5 < 0") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 < 0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  
+  test("5 <= 9") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 <= 9""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("5 <= 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 <= 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("5 <= 0") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 <= 0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  
+  test("9 > 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 9 > 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("5 > 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 > 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("0 > 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 0 > 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  
+  test("9 >= 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 9 >= 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("5 >= 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 >= 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("0 >= 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 0 >= 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  
+  
+  test("5 = 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 = 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("0 = 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 0 = 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("5 ~= 0") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 ~= 0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("5 ~= 5") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) 5 ~= 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  
+
+  test("5 + 5") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) 5 + 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(10))
+  }
+  test("5.0 + 5.0") {
+    val graphs = SISAL.compileFunction("""function main(returns real) 5.0 + 5.0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LDouble(10))
+  }
+  
+  test("25 - 5") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) 25 - 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(20))
+  }
+  test("25.0 - 5.0") {
+    val graphs = SISAL.compileFunction("""function main(returns real) 25.0 - 5.0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LDouble(20))
+  }
+  
+  test("25 * 5") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) 25 * 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(125))
+  }
+  test("25.0 * 5.0") {
+    val graphs = SISAL.compileFunction("""function main(returns real) 25.0 * 5.0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LDouble(125.0))
+  }
+  
+  test("25 / 5") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) 25 / 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(5))
+  }
+  test("25.0 / 5.0") {
+    val graphs = SISAL.compileFunction("""function main(returns real) 25.0 / 5.0""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LDouble(5.0))
+  }
+  
+  
+  
+  
+  test("25 % 5") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) 25 % 5""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(0))
+  }
+  test("boolean(0)") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) boolean(0)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(false))
+  }
+  test("boolean(1)") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) boolean(1)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LBoolean(true))
+  }
+  test("boolean(22)") {
+    val graphs = SISAL.compileFunction("""function main(returns boolean) boolean(22)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0).isInstanceOf[LError])
+  }  
+  test("int(25.6)") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) integer(25.6)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(26))
+  }
+  test("int(25.2)") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) integer(25.2)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(25))
+  }
+  test("real(25)") {
+    val graphs = SISAL.compileFunction("""function main(returns real) real(25)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LDouble(25.0))
+  }
+  test("char(97)") {
+    val graphs = SISAL.compileFunction("""function main(returns character) character(97)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LCharacter("a"))
+  }
+  test("floor(25.8)") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) floor(25.8)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(25))
+  }
+  test("trunc(25.8)") {
+    val graphs = SISAL.compileFunction("""function main(returns integer) trunc(25.8)""")
+    val values = Interpreter.eval(Program(graphs, List()))
+    assert(values(0) == LInteger(25))
+  } 
+}

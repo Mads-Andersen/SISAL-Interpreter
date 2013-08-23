@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/100/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional
+END
+Model.scala
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/73/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/Model.scala
+END
+Equivalences.scala
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/100/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/Equivalences.scala
+END
+Core.scala
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/88/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/Core.scala
+END
+CNFTransformer.scala
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/100/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/CNFTransformer.scala
+END
+KnowledgeBase.scala
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/86/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/KnowledgeBase.scala
+END

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="63" version="2.0">
+<workbenchAdvisor/>
+<window height="976" maximized="true" width="1916" x="4" y="22">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="134" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="70" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.scala-ide.sdt.core.toolbar" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="scala.texteditor.actionset" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="scala.tools.eclipse.ScalaClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="scala.tools.eclipse.ScalaSourceFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1376280918396" focus="true" label="Workspace - Java EE">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="GraphMerger.scala" partName="GraphMerger.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/GraphMerger.scala" title="GraphMerger.scala" tooltip="Compiler/src/partitioner/GraphMerger.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/GraphMerger.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="153" selectionTopPixel="60"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="ParserType.scala" partName="ParserType.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/parser/ParserType.scala" title="ParserType.scala" tooltip="Compiler/src/parser/ParserType.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/parser/ParserType.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="613" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="GraphExpansion.scala" partName="GraphExpansion.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/GraphExpansion.scala" title="GraphExpansion.scala" tooltip="Compiler/src/partitioner/GraphExpansion.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/GraphExpansion.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="771" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="TimeModel.scala" partName="TimeModel.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/TimeModel.scala" title="TimeModel.scala" tooltip="Compiler/src/partitioner/TimeModel.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/TimeModel.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="329" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Parser.scala" partName="Parser.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/parser/Parser.scala" title="Parser.scala" tooltip="Compiler/src/parser/Parser.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/parser/Parser.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="TypeMethods.scala" partName="TypeMethods.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/parser/TypeMethods.scala" title="TypeMethods.scala" tooltip="Compiler/src/parser/TypeMethods.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/parser/TypeMethods.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="53" selectionOffset="1715" selectionTopPixel="705"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Partitioner.scala" partName="Partitioner.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/Partitioner.scala" title="Partitioner.scala" tooltip="Compiler/src/partitioner/Partitioner.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/Partitioner.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="651" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="CostAssignment.scala" partName="CostAssignment.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/CostAssignment.scala" title="CostAssignment.scala" tooltip="Compiler/src/partitioner/CostAssignment.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/CostAssignment.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="907" selectionTopPixel="88"/>
+</editor>
+<editor activePart="true" focus="true" id="scala.tools.eclipse.ScalaSourceFileEditor" name="GraphDependence.scala" partName="GraphDependence.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/GraphDependence.scala" title="GraphDependence.scala" tooltip="Compiler/src/partitioner/GraphDependence.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/GraphDependence.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1375" selectionTopPixel="85"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="CriticalPath.scala" partName="CriticalPath.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/CriticalPath.scala" title="CriticalPath.scala" tooltip="Compiler/src/partitioner/CriticalPath.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/CriticalPath.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="313" selectionTopPixel="25"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="InterpreterSeq.scala" partName="InterpreterSeq.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/interpreter/InterpreterSeq.scala" title="InterpreterSeq.scala" tooltip="Compiler/src/interpreter/InterpreterSeq.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/interpreter/InterpreterSeq.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="50" selectionOffset="2171" selectionTopPixel="870"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="InterpreterPar.scala" partName="InterpreterPar.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/interpreter/InterpreterPar.scala" title="InterpreterPar.scala" tooltip="Compiler/src/interpreter/InterpreterPar.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/interpreter/InterpreterPar.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="SCC.scala" partName="SCC.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/partitioner/SCC.scala" title="SCC.scala" tooltip="Compiler/src/partitioner/SCC.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/partitioner/SCC.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Extractor.scala" partName="Extractor.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/interpreter/Extractor.scala" title="Extractor.scala" tooltip="Compiler/src/interpreter/Extractor.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/interpreter/Extractor.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="Utility.scala" partName="Utility.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/interpreter/Utility.scala" title="Utility.scala" tooltip="Compiler/src/interpreter/Utility.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/interpreter/Utility.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaSourceFileEditor" name="TopologicalSort.scala" partName="TopologicalSort.scala" path="/Users/Mads/Dropbox/Master Thesis/Code/Compiler/src/interpreter/TopologicalSort.scala" title="TopologicalSort.scala" tooltip="Compiler/src/interpreter/TopologicalSort.scala" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Compiler/src/interpreter/TopologicalSort.scala"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="scala.tools.eclipse.ScalaClassFileEditor" name="TraversableLike.class" partName="TraversableLike.class" title="TraversableLike.class" tooltip="scala.collection.TraversableLike" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Compiler/\/Applications\/eclipse-indigo\/configuration\/org.eclipse.osgi\/bundles\/767\/1\/.cp\/lib\/scala-library.jar&lt;scala.collection(TraversableLike.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="29" selectionOffset="9607" selectionTopPixel="3180"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="2" org.eclipse.search.resultpage.layout="2"/>
+<view IMemento.internal.id="org.scala.tools.eclipse.search.ui.SearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
+<expanded>&#x0A;<category IMemento.internal.id="Scala Problem (3 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.allSeverityField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" partName="Snippets"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>&#x0A;<category IMemento.internal.id="Warnings (1 item)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1361442099123">
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsConnections" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.mylyn.java.ui.MembersFilter" isEnabled="false"/>
+<child filterId="scala.tools.eclipse.javaelements.ScalaElementFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsTempFiles" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="scala.tools.eclipse.scalatest.ui.ScalaTestResultView" partName="ScalaTest">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+</views>
+<perspectives activePart="scala.tools.eclipse.ScalaSourceFileEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="scala.texteditor.actionset"/>
+<alwaysOnActionSet id="org.eclipse.jst.j2ee.J2eeMainActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
+<show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<show_view_action id="org.eclipse.ui.views.AllMarkersView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<new_wizard_action id="org.eclipse.jpt.jpa.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.EarProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.project.facet.EjbProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.jca.ui.internal.wizard.ConnectorProjectWizard"/>
+<new_wizard_action id="org.eclipse.jst.j2ee.ui.project.facet.appclient.AppClientProjectWizard"/>
+<new_wizard_action id="org.eclipse.wst.web.ui.internal.wizards.SimpleWebProjectWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newJpaProject"/>
+<new_wizard_action id="org.eclipse.jst.servlet.ui.internal.wizard.AddServletWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddSessionBeanWizard"/>
+<new_wizard_action id="org.eclipse.jst.ejb.ui.internal.wizard.AddMessageDrivenBeanWizard"/>
+<new_wizard_action id="org.eclipse.jpt.ui.wizard.newEntity"/>
+<new_wizard_action id="org.eclipse.jst.ws.creation.ui.wizard.serverwizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<perspective_action id="org.eclipse.jpt.ui.jpaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.wst.web.ui.webDevPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.AllMarkersView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="scala.tools.eclipse.scalatest.ui.ScalaTestResultView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1431" ratioRight="477" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.18577075" ratioLeft="235" ratioRight="1030" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.7304348" ratioLeft="504" ratioRight="186" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="Snippets"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="scala.tools.eclipse.scalatest.ui.ScalaTestResultView" label="ScalaTest"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.6995108" ratioLeft="1001" ratioRight="430" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor descriptor="org.jvmmonitor.ui.JavaMonitorPerspective" id="&lt;Java_Monitor&gt;" label="&lt;Java Monitor&gt;"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="scala.texteditor.actionset"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
+<show_view_action id="org.jvmmonitor.ui.JvmExplorer"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.PackagesView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.jvmmonitor.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.jvmmonitor.ui.JvmExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1431" ratioRight="477" relationship="2" relative="org.jvmmonitor.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.10236221" ratioLeft="195" ratioRight="1710" relationship="2" relative="org.jvmmonitor.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.jvmmonitor.internal.ui.PropertiesFolderView" ratio="0.73298967" ratioLeft="711" ratioRight="259" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.jvmmonitor.internal.ui.OutlineFolderView" ratio="0.7498253" ratioLeft="1073" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.jvmmonitor.internal.ui.DebugFolderView" ratio="0.49948612" ratioLeft="486" ratioRight="487" relationship="4" relative="org.jvmmonitor.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="scala.texteditor.actionset"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.texteditor.TemplatesView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewJavaWorkingSetWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<new_wizard_action id="org.eclipse.mylyn.tasks.ui.wizards.new.repository.task"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
+<perspective_action id="org.scala-ide.sdt.core.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1431" ratioRight="477" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="477" ratioRight="1431" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.7492292" ratioLeft="729" ratioRight="244" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5b7836c8" ratio="0.7498253" ratioLeft="1073" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.49931413" ratioLeft="364" ratioRight="365" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5b7836c8">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/TimeModel.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/Partitioner.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/interpreter/InterpreterSeq.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/TaskMerger.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/SCC.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/CostAssignment.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/CriticalPath.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/GraphDependence.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/interpreter/TopologicalSort.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/partitioner/GraphMerger.scala"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/parser/TypeMethods.scala"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Compiler/\/Applications\/eclipse-indigo\/configuration\/org.eclipse.osgi\/bundles\/767\/1\/.cp\/lib\/scala-library.jar&lt;scala.collection(TraversableLike.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" path="/Compiler/src/parser/ParserType.scala"/>
+</editors>
+<item historyLabel="TopologicalSort.scala" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SCC.scala" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TaskMerger.scala" index="3">
+<position/>
+</item>
+<item historyLabel="GraphMerger.scala" index="9">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="InterpreterSeq.scala" index="2">
+<position info="not_deleted" x="217" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="718" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="738" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="737" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="730" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="686" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="GraphMerger.scala" index="9">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1340" y="0"/>
+</item>
+<item historyLabel="TimeModel.scala" index="0">
+<position info="not_deleted" x="329" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1340" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="436" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1330" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="320" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="436" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1908" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="625" y="0"/>
+</item>
+<item historyLabel="TypeMethods.scala" index="10">
+<position info="not_deleted" x="1715" y="53"/>
+</item>
+<item historyLabel="TypeMethods.scala" index="10">
+<position info="not_deleted" x="2955" y="39"/>
+</item>
+<item historyLabel="TraversableLike.class" index="11">
+<position info="not_deleted" x="9607" y="29"/>
+</item>
+<item historyLabel="TypeMethods.scala" index="10">
+<position info="not_deleted" x="2955" y="39"/>
+</item>
+<item historyLabel="InterpreterSeq.scala" index="2">
+<position info="not_deleted" x="2171" y="50"/>
+</item>
+<item historyLabel="TypeMethods.scala" index="10">
+<position info="not_deleted" x="2955" y="39"/>
+</item>
+<item historyLabel="TypeMethods.scala" index="10">
+<position info="not_deleted" x="1715" y="53"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="658" y="0"/>
+</item>
+<item historyLabel="TimeModel.scala" index="0">
+<position info="not_deleted" x="329" y="0"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="272" y="72"/>
+</item>
+<item historyLabel="Partitioner.scala" index="1">
+<position info="not_deleted" x="651" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="436" y="0"/>
+</item>
+<item historyLabel="CostAssignment.scala" index="5">
+<position info="not_deleted" x="907" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1330" y="0"/>
+</item>
+<item historyLabel="ParserType.scala" index="12">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1330" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="349" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="349" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="417" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="256" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="201" y="0"/>
+</item>
+<item historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1576" y="0"/>
+</item>
+<item historyLabel="CriticalPath.scala" index="6">
+<position info="not_deleted" x="313" y="0"/>
+</item>
+<item active="true" historyLabel="GraphDependence.scala" index="7">
+<position info="not_deleted" x="1576" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="scala.tools.eclipse.ScalaClassFileEditor" name="TraversableLike.class" tooltip="scala.collection.TraversableLike">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Compiler/\/Applications\/eclipse-indigo\/configuration\/org.eclipse.osgi\/bundles\/767\/1\/.cp\/lib\/scala-library.jar&lt;scala.collection(TraversableLike.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TopologicalSort.scala" tooltip="Compiler/src/interpreter/TopologicalSort.scala">
+<persistable path="/Compiler/src/interpreter/TopologicalSort.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Utility.scala" tooltip="Compiler/src/interpreter/Utility.scala">
+<persistable path="/Compiler/src/interpreter/Utility.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Extractor.scala" tooltip="Compiler/src/interpreter/Extractor.scala">
+<persistable path="/Compiler/src/interpreter/Extractor.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="SCC.scala" tooltip="Compiler/src/partitioner/SCC.scala">
+<persistable path="/Compiler/src/partitioner/SCC.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="InterpreterPar.scala" tooltip="Compiler/src/interpreter/InterpreterPar.scala">
+<persistable path="/Compiler/src/interpreter/InterpreterPar.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="InterpreterSeq.scala" tooltip="Compiler/src/interpreter/InterpreterSeq.scala">
+<persistable path="/Compiler/src/interpreter/InterpreterSeq.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Algorithms.scala" tooltip="Compiler/src/partitioner/Algorithms.scala">
+<persistable path="/Compiler/src/partitioner/Algorithms.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Hej.scala" tooltip="Compiler/src/partitioner/Hej.scala">
+<persistable path="/Compiler/src/partitioner/Hej.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="CostAssignment.scala" tooltip="Compiler/src/partitioner/CostAssignment.scala">
+<persistable path="/Compiler/src/partitioner/CostAssignment.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Partitioner.scala" tooltip="Compiler/src/partitioner/Partitioner.scala">
+<persistable path="/Compiler/src/partitioner/Partitioner.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TypeMethods.scala" tooltip="Compiler/src/parser/TypeMethods.scala">
+<persistable path="/Compiler/src/parser/TypeMethods.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="Parser.scala" tooltip="Compiler/src/parser/Parser.scala">
+<persistable path="/Compiler/src/parser/Parser.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="TimeModel.scala" tooltip="Compiler/src/partitioner/TimeModel.scala">
+<persistable path="/Compiler/src/partitioner/TimeModel.scala"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="scala.tools.eclipse.ScalaSourceFileEditor" name="GraphExpansion.scala" tooltip="Compiler/src/partitioner/GraphExpansion.scala">
+<persistable path="/Compiler/src/partitioner/GraphExpansion.scala"/>
+</file>
+</mruList>
+</workbench>

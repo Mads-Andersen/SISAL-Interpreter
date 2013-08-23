@@ -1,0 +1,532 @@
+package interpreter
+
+import parser._
+import utility._
+
+object Interpreter {
+
+  type Environment = Seq[(Edge, Literal)]
+  
+  def main(args: Array[String]) {
+    //val graph = SISAL.compileFile("../Programs/Squares.sis")
+    val graph = SISAL.compileFunction("function main(returns integer) Max((25 - 5) * 5, 50)")
+    //val graph = SISAL.compileFunction("function main(returns boolean) 5 >= 5)")
+    GraphPrinter.openGraph(graph)
+    println(Utility.time {extract(eval(graph, List()))})
+  }
+  
+  def replace(array: LArray, index: LInteger, values: Seq[Literal]) = {
+    val oldValues = array.values.slice(index.value, array.values.size-1)
+    oldValues ++ values
+  }
+    
+  def eval(graph: Graph) : Seq[Literal] = extract(eval(graph, List()))
+  
+  private def extract(env: Environment) = { env.map(x => x._2)}
+  private def eval(graph: Graph, env: Environment): Environment = {
+    val nodes = TopologicalSort.sort(graph)
+    eval(nodes, env)
+  }
+
+  private def eval(nodes: Seq[Node], env: Environment): Environment = nodes match {
+    case Nil => env
+    case h :: t =>
+      val node = h
+      val newEnv = eval(node, env)
+      eval(t, newEnv)
+  }
+
+  private def failWith(node: Node, env: Environment) = {
+    throw new Exception("" + node.getClass().getSimpleName() + ": Not implemented")
+    env
+  }
+
+  private def produce(value: Literal, node: Node, env: Environment): Environment = {
+    val tempEnv = consume(node.getInputEdges, env)
+    val newEnv = produce(node.getOutputEdges, value, tempEnv)
+    newEnv
+  }
+
+  private def produce(values: Seq[Literal], node: Node, env: Environment): Environment = {
+    val tempEnv = consume(node.getInputEdges, env)
+    val newEnv = produce(values, node, 1, tempEnv)
+    newEnv
+  }
+
+  private def produce(values: Seq[Literal], node: Node, port: Int, env: Environment): Environment = values match {
+    case Nil => env
+    case h :: t =>
+      val newValues = node.getOutputEdges().filter(x => x.sNode == node.id && x.dPort == port) 
+      val tuples = newValues.map(x => (x, h))
+      produce(t, node, port + 1, env ++ tuples)
+  }
+
+  private def consume(edges: Seq[Edge], env: Environment): Environment = edges match {
+    case Nil => env
+    case h :: t => consume(t, env.filter(x => (x._1 != h)))
+  }
+
+  private def produce(edges: Seq[Edge], value: Literal, env: Environment): Environment = edges match {
+    case Nil => env
+    case h :: t => produce(t, value, env :+ (h, value))
+  }
+
+  private def eval(node: Node, env: Environment): Environment = {
+    val values = node.getInputs(env)
+    node match {
+      case n: NPlus =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(x.value + y.value)
+          case (x: LInteger, y: LInteger) => LInteger(x.value + y.value)
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value | y.value)
+          case (_, _) => LError("Plus: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NTimes =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(x.value * y.value)
+          case (x: LInteger, y: LInteger) => LInteger(x.value * y.value)
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value & y.value)
+          case (_, _) => LError("Times: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NMin =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(Math.min(x.value, y.value))
+          case (x: LInteger, y: LInteger) => LInteger(Math.min(x.value, y.value))
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value & y.value)
+          case (_, _) => LError("Min: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NMax =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(Math.max(x.value, y.value))
+          case (x: LInteger, y: LInteger) => LInteger(Math.max(x.value, y.value))
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value | y.value)
+          case (_, _) => LError("Max: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NMinus =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(x.value - y.value)
+          case (x: LInteger, y: LInteger) => LInteger(x.value - y.value)
+          case (_, _) => LError("Minus: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NDiv =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(x.value / y.value)
+          case (x: LInteger, y: LInteger) => LInteger(x.value / y.value)
+          case (_, _) => LError("Div: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NMod =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(x.value % y.value)
+          case (x: LInteger, y: LInteger) => LInteger(x.value % y.value)
+          case (_, _) => LError("Mod: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NExp =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LDouble(Math.pow(x.value, y.value))
+          case (x: LInteger, y: LInteger) => LInteger(Math.pow(x.value, y.value).toInt)
+          case (_, _) => LError("Exp: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NAbs =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LDouble(Math.abs(x.value))
+          case x: LInteger => LInteger(Math.abs(x.value))
+          case _ => LError("Abs: Wrong type. Expected type of integer or double", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NNeg =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LDouble(-x.value)
+          case x: LInteger => LInteger(-x.value)
+          case _ => LError("Neg: Wrong type. Expected type of integer or double", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NNot =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LBoolean => LBoolean(!x.value)
+          case _ => LError("Not: Wrong type. Expected type of bool", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NLess =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LBoolean(x.value < y.value)
+          case (x: LInteger, y: LInteger) => LBoolean(x.value < y.value)
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value < y.value)
+          case (x: LCharacter, y: LCharacter) => LBoolean(x.value < y.value)
+          case (_, _) => LError("Less: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NLessEqual =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LBoolean(x.value <= y.value)
+          case (x: LInteger, y: LInteger) => LBoolean(x.value <= y.value)
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value <= y.value)
+          case (x: LCharacter, y: LCharacter) => LBoolean(x.value <= y.value)
+          case (_, _) => LError("LessEqual: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NEqual =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LBoolean(x.value == y.value)
+          case (x: LInteger, y: LInteger) => LBoolean(x.value == y.value)
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value == y.value)
+          case (x: LCharacter, y: LCharacter) => LBoolean(x.value == y.value)
+          case (_, _) => LError("Equal: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NNotEqual =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LDouble, y: LDouble) => LBoolean(x.value != y.value)
+          case (x: LInteger, y: LInteger) => LBoolean(x.value != y.value)
+          case (x: LBoolean, y: LBoolean) => LBoolean(x.value != y.value)
+          case (x: LCharacter, y: LCharacter) => LBoolean(x.value != y.value)
+          case (_, _) => LError("NotEqual: Wrong types", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NIsError =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (x: LError, y: LError) => LBoolean(x.text == y.text)
+          case (_, _) => LError("IsError: Wrong types. Expected both arguments to be of type error", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NBool =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LInteger => x.value match {
+            case 0 => LBoolean(false)
+            case 1 => LBoolean(true)
+            case _ => LError("Bool: Expected the integer 1 or 0", v1)
+          }
+          case _ => LError("Bool: Wrong type. Expected type of integer", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NChar =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LInteger => LCharacter(x.value.toChar.toString)
+          case _ => LError("Char: Wrong type. Expected type of integer", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NDouble =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LDouble(x.value)
+          case x: LInteger => LDouble(x.value)
+          case _ => LError("Double: Wrong type. Expected type of integer or double", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NInt =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LInteger(Math.floor(x.value + 0.5).toInt)
+          case x: LInteger => LInteger(Math.floor(x.value + 0.5).toInt)
+          case x: LCharacter => LInteger(x.value.toCharArray()(0).toInt)
+          case x: LBoolean => x.value match {
+            case false => LInteger(0)
+            case true => LInteger(1)
+          }
+          case _ => LError("Int: Wrong type", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NFloor =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LInteger(Math.floor(x.value).toInt)
+          case _ => LError("Floor: Wrong type. Expected type of double", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NTrunc =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LInteger(x.value.toInt)
+          case _ => LError("Trunc: Wrong type. Expected type of double", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NSingle =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LDouble => LDouble(x.value)
+          case x: LInteger => LDouble(x.value)
+          case _ => LError("Single: Wrong type. Expected type of integer or double", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NNoOp =>
+        produce(values, n, env)
+      case n: NABuild =>
+        val v1 = values(0)
+        val array = values.slice(1, values.size - 1)
+        produce(LArray(array), n, env)
+      case n: NAFill =>
+        val v1 = values(0)
+        val v2 = values(1)
+        val v3 = values(2)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (low: LInteger, high: LInteger) =>
+            val size = high.value - low.value
+            val values = List.make(size, v3)
+            LArray(values)
+          case _ => LError("AFill: Wrong types. Expected both types to be of integer", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NAElement =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (array: LArray, index: LInteger) => array.values(index.value) // zero or one based?
+          case (_, _) => LError("AElement: Wrong types. Expected array type and integer type", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NAReplace =>
+        val v1 = values(0)
+        val v2 = values(1)
+        val rest = values.slice(2,values.size-1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (array: LArray, index: LInteger) => 
+            val oldValues = array.values.slice(index.value, array.values.size-1)
+            val newValues = oldValues ++ values
+            LArray(newValues)
+          case (_, _) => LError("AReplace: Wrong types. Expected array type and integer type", v1, v2)
+        }
+        produce(interpret(v1,v2), n, env)
+      case n: NACatenate =>
+        val v1 = values(0)
+        val array = values.slice(1, values.size - 1)
+        failWith(n, env)
+      case n: NALimL =>
+        produce(LInteger(0), n, env)
+      case n: NALimH =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LArray => LInteger(x.values.size - 1)
+          case _ => LError("ALim: Expected type of array", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NASize =>
+        failWith(n, env)
+      case n: NAIsEmpty =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LArray => x.values.size match {
+            case 0 => LBoolean(true)
+            case _ => LBoolean(false)
+          }
+          case _ => LError("AIsEmpty: Wrong type. Expected type of array", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NAAddL =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (array: LArray, value: Literal) => LArray(value :: array.values.toList)
+          case (_, _) => LError("AAddL: Wrong types. Expected first argument to be of type array", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NAAddH =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (array: LArray, value: Literal) => LArray(array.values.toList :+ value)
+          case (_, _) => LError("AAddH: Wrong types. Expected first argument to be of type array", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NARemL =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LArray => LArray(x.values.slice(1, x.values.size - 1))
+          case _ => LError("ARemL: Wrong type. Expected type of array", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NARemH =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LArray => LArray(x.values.slice(0, x.values.size - 2))
+          case _ => LError("ARem: Wrong type. Expected type of array", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NASetL =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case x: LArray => x
+          case _ => LError("ASetL: Wrong type. Expected type of array", v1)
+        }
+        produce(interpret(v1), node, env)
+      case n: NRBuild => 
+        val value = LRecord(values)
+        LError("Not implemented: Missing functionality", values:_*)
+        produce(value, node, env)
+      case n: NRElements =>
+        val v1 = values(0)
+        v1 match {
+          case x: LRecord => produce(x.values, node, env)
+          case _ => produce(LError("RElements: Wrong type. Expected type of record", v1), node, env)
+        }
+      case n: NRReplace =>
+        val v1 = values(0)
+        val rest = values.slice(1, values.size-1)
+        v1 match {
+          case record: LRecord =>
+            def replace(v1: Literal, v2: Literal) = v2 match {
+              case x: LEmpty => v1
+              case _ => v2
+            }
+            val fields = record.values
+            val zipped = fields.zip(rest)
+            val newValues = zipped.map(x => replace(x._1, x._2))
+            
+            LArray(newValues)
+          case _ => LError("RReplace: Wrong type. Expected type of record", v1)
+        }      
+        produce(v1, node, env)
+      case n: NAScatter =>
+        val v1 = values(0)
+        def interpret(v1: Literal) = v1 match {
+          case multiple: LMultiple =>
+            val tuples = multiple.values.zipWithIndex
+            val indexes = tuples.map(x => LInteger(x._2)) // zero or one based?
+            List(multiple, LMultiple(indexes))
+          case _ => List(LError("AScatter: Wrong type. Expected type of array", v1))
+        }
+        produce(interpret(v1), node, env)
+      case n: NRangeGenerate =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (low: LInteger, high: LInteger) =>
+            val integers = List.range(low.value, high.value+1, 1).map(x => LInteger(x))
+            LMultiple(integers)
+          case (_, _) => LError("RangeGenerate: Wrong types. Expected both arguments to be of type integer", v1, v2)
+        }
+        produce(interpret(v1, v2), node, env)
+      case n: NAGather =>
+        val v1 = values(0)
+        val v2 = values(1)
+        def interpret(v1: Literal, v2: Literal) = (v1, v2) match {
+          case (low: LInteger, multiple: LMultiple) => multiple // need more
+          case (_, _) => LError("AGather: Wrong types. Expected arguments to be of type integer and of type multiple", v1, v2)
+        }
+        def interpret2(v1: Literal, v2: Literal, v3: Literal) = (v1, v2, v3) match {
+          case (low: LInteger, multiple: LMultiple, included: LMultiple) => 
+            val dd = 
+            multiple // need more
+          case (_, _, _) => LError("AGather: Wrong types. Expected arguments to be of type integer and of type array", v1, v2)
+        }
+        
+        
+        if(values.size > 2) {
+          produce(interpret(v1, v2), node, env)
+        }
+        else {
+          produce(interpret(v1, v2), node, env)
+        }
+        
+        
+      case n: NReduce =>
+        produce(LError("Not implemented"), node, env)
+      case n: NRedLeft =>
+        produce(LError("Not implemented"), node, env)
+      case n: NRedRight =>
+        produce(LError("Not implemented"), node, env)
+      case n: NRedTree =>
+        produce(LError("Not implemented"), node, env)
+      case n: NFirstValue =>
+        produce(LError("Not implemented"), node, env)
+      case n: NFinalValue =>
+        produce(LError("Not implemented"), node, env)
+      case n: NCall =>
+        produce(LError("Not implemented"), node, env)
+      case n: NBindArguments =>
+        produce(LError("Not implemented"), node, env)
+      case n: NSelect =>
+        produce(LError("Not implemented"), node, env)
+      case n: NTagCase =>
+        produce(LError("Not implemented"), node, env)
+      case n: NForAll =>
+        val generator = n.graphs(0)
+        val body = n.graphs(1)
+        val results = n.graphs(2)
+       
+        val generatorEnv = createEnv(generator, values, 1, List())
+        val generatorResult = extract(eval(generator, generatorEnv))
+        
+        val bodyCount = multipleCount(generatorResult)
+        val x1 = mmm(generatorResult, 0, List())
+        val x2 = mmm(generatorResult, 1, List())
+        val x3 = mmm(generatorResult, 2, List())
+        
+        val bodyEnv = createEnv(body, values ++ x1, 1, List())
+        val bodyResult = extract(eval(body, bodyEnv))
+        val test = List(LArray(bodyResult ++ bodyResult ++ bodyResult ++ bodyResult ++ bodyResult ++ bodyResult ++ bodyResult ++ bodyResult ++ bodyResult ++ bodyResult))
+ 
+        val x = LArray(List())
+        val g = List()
+        val h = (g :+ x) ++ generatorResult ++ test
+        val resultsEnv = createEnv(results, h, 1, List())
+        println(resultsEnv)
+        val resultsValues = extract(eval(results, resultsEnv))
+        println(resultsValues)
+        produce(resultsValues(0), node, env)
+      case n: NLoopA =>
+        produce(LError("Not implemented"), node, env)
+      case n: NLoopB =>
+        produce(LError("Not implemented"), node, env)
+      case _ => failWith(node, env)
+    }
+  }
+  
+  private def multipleCount(multiples: Seq[Literal]) = {
+    multiples(0) match {
+      case x: LArray => x.values.size
+      case _ => -1
+    }
+  }
+  
+  private def mmm(multiples: Seq[Literal], index: Int, values: Seq[Literal]) : Seq[Literal] = multiples match {
+    case Nil => values
+    case h :: t => h match {
+      case array: LArray => mmm(t, index, values :+ array.values(index))
+    }
+  }
+  
+  private def createEnv(graph: Graph, values: Seq[Literal], index: Int, env: Environment) : Environment = values match {
+    case Nil => env
+    case h :: t => 
+      val edges = graph.getBoundaryInputEdges(index)
+      createEnv(graph, t, index+1, env ++ edges.map(x => (x, values(index-1))))
+  }
+}

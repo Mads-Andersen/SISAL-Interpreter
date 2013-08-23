@@ -1,0 +1,69 @@
+package interpreter
+import interpreter._
+
+case class NForAll(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]],  graphs:Seq[Graph], associations:Seq[Int]) extends CNode
+case class NSelect(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]],  graphs:Seq[Graph], associations:Seq[Int]) extends CNode
+case class NTagCase(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]],  graphs:Seq[Graph], associations:Seq[Int]) extends CNode
+case class NLoopA(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]],  graphs:Seq[Graph], associations:Seq[Int]) extends CNode
+case class NLoopB(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]],  graphs:Seq[Graph], associations:Seq[Int]) extends CNode
+
+case class NEmpty(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAAddH(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAAddL(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAExtract(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NABuild(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NACatenate(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAElement(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAFill(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAGather(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAIsEmpty(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NALimH(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NALimL(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NARemH(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NARemL(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAReplace(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAScatter(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NASetL(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NASize(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NAbs(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NBindArguments(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NBool(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NCall(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NChar(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NDiv(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NDouble(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NEqual(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NExp(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NFirstValue(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NFinalValue(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NFloor(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NInt(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NIsError(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NLess(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NLessEqual(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NMax(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NMin(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NMinus(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NMod(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NNeg(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NNoOp(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NNot(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NNotEqual(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NPlus(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRangeGenerate(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRBuild(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRElements(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRReplace(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRedLeft(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRedRight(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NRedTree(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+
+case class NReduce(id: Int, inputPorts: Map[Int,Edge], outputPorts: Map[Int,Seq[Edge]]) extends SNode
+object NReduceIns {
+  def unapply(x: NReduce): Option[(LString, Literal, LMultiple, LMultiple)] = ???
+}
+
+case class NRestValues(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NSingle(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NTimes(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode
+case class NTrunc(id:Int, inputPorts:Map[Int,Edge], outputPorts:Map[Int,Seq[Edge]]) extends SNode

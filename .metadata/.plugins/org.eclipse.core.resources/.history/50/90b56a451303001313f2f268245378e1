@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/88/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference
+END
+TruthTable.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/80/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/TruthTable.scala
+END
+BackwardChaining.scala
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/88/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/BackwardChaining.scala
+END
+Resolution.scala
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/88/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/Resolution.scala
+END
+ForwardChaining.scala
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/86/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/ForwardChaining.scala
+END
+InferenceAlgorithm.scala
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/84/trunk/src/main/scala/net/pragyah/scalgorithms/aima/logic/propositional/inference/InferenceAlgorithm.scala
+END

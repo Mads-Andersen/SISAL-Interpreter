@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/29/trunk/src/main/scala/net/pragyah/scalgorithms/sorting
+END
+QuickSort.scala
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/10/trunk/src/main/scala/net/pragyah/scalgorithms/sorting/QuickSort.scala
+END
+MergeSort.scala
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/29/trunk/src/main/scala/net/pragyah/scalgorithms/sorting/MergeSort.scala
+END
+Core.scala
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/10/trunk/src/main/scala/net/pragyah/scalgorithms/sorting/Core.scala
+END

@@ -1,0 +1,226 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375947828703
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375947847728
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947849593
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947849940
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947855235
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947855558
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947857329
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947857696
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947858919
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947859284
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947866824
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947869769
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947870991
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947875516
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947877545
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947877862
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375947900479
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947901702
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947903383
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947904894
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947905186
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947906696
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947913381
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375947933926
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947936951
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947938584
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947961797
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947962154
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947964409
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947969716
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947980514
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947981759
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947983237
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947983594
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947985586
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947985951
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947986693
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947987100
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947988076
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947988408
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947989373
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375947989736
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375947999741
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948000295
+executed,command,,,"AUTOGEN:::org.eclipse.jdt.debug.CompilationUnitEditor.BreakpointRulerActions/org.eclipse.jdt.internal.ui.javaeditor.JavaSelectRulerAction",1375948006112
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948019248
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948082056
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948082372
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948090825
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948091371
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948096392
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948096754
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948114031
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948114371
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948116569
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948123273
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948130931
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948140966
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948143642
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948144004
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948144539
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948144870
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948151540
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948155273
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948178165
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948221759
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948236824
+started,bundle,org.eclipse.rse.services,3.2.101.R33x_v201109141647,"org.eclipse.rse.services",1375948241087
+started,bundle,org.eclipse.rse.core,3.2.2.R33x_v201110030150,"org.eclipse.rse.core",1375948241176
+started,bundle,org.eclipse.rse.ui,3.2.1.R33x_v201109141647,"org.eclipse.rse.ui",1375948241664
+started,bundle,org.eclipse.rse.files.ui,3.2.1.R33x_v201109141647,"org.eclipse.rse.files.ui",1375948241687
+started,bundle,org.eclipse.rse.subsystems.files.core,3.2.101.R33x_v201107181530,"org.eclipse.rse.subsystems.files.core",1375948241788
+started,bundle,org.eclipse.rse.subsystems.files.local,2.1.200.v201101042155,"org.eclipse.rse.subsystems.files.local",1375948241825
+started,bundle,org.eclipse.rse.subsystems.shells.core,3.1.201.R33x_v201106281309,"org.eclipse.rse.subsystems.shells.core",1375948242043
+started,bundle,org.eclipse.rse.subsystems.shells.local,2.1.300.v201101042155,"org.eclipse.rse.subsystems.shells.local",1375948242050
+started,bundle,org.eclipse.rse.connectorservice.local,2.1.300.v201101042155,"org.eclipse.rse.connectorservice.local",1375948242183
+started,bundle,org.eclipse.rse.services.local,2.1.300.v201105311250,"org.eclipse.rse.services.local",1375948242221
+error,log,,,"Core exception while retrieving the content description",1375948242230
+error,log,,,"Core exception while retrieving the content description",1375948242234
+error,log,,,"Core exception while retrieving the content description",1375948242278
+error,log,,,"Core exception while retrieving the content description",1375948242279
+error,log,,,"Core exception while retrieving the content description",1375948242351
+error,log,,,"Core exception while retrieving the content description",1375948242354
+error,log,,,"Core exception while retrieving the content description",1375948242365
+error,log,,,"Core exception while retrieving the content description",1375948242399
+error,log,,,"Core exception while retrieving the content description",1375948242420
+error,log,,,"Core exception while retrieving the content description",1375948242422
+error,log,,,"Core exception while retrieving the content description",1375948242439
+error,log,,,"Core exception while retrieving the content description",1375948242441
+error,log,,,"Core exception while retrieving the content description",1375948243423
+error,log,,,"Core exception while retrieving the content description",1375948243425
+error,log,,,"Core exception while retrieving the content description",1375948243480
+error,log,,,"Core exception while retrieving the content description",1375948243482
+error,log,,,"Core exception while retrieving the content description",1375948243483
+error,log,,,"Core exception while retrieving the content description",1375948243485
+error,log,,,"Core exception while retrieving the content description",1375948243487
+error,log,,,"Core exception while retrieving the content description",1375948243489
+error,log,,,"Core exception while retrieving the content description",1375948243491
+error,log,,,"Core exception while retrieving the content description",1375948243493
+opened,view,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.views.SearchView",1375948254749
+activated,view,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.views.SearchView",1375948254786
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948255146
+executed,command,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.openSearchDialog",1375948255969
+error,log,,,"Problems encountered during text search.",1375948256433
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948256683
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948259322
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948260686
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948270463
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948270629
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948271947
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948272114
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948273264
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948273447
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948274987
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948275168
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948276619
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948276801
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948278132
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948278298
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948281326
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948281473
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948282323
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948282512
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948283635
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948283801
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948284466
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948284657
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948286426
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948286586
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948288458
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948288655
+activated,view,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.views.SearchView",1375948293083
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948295498
+activated,view,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.views.SearchView",1375948306387
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948310021
+activated,view,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.views.SearchView",1375948313404
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948313694
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948317477
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948317655
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948325009
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948325192
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948325480
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948325944
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948328738
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948347957
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948351080
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948351544
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948351982
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948352406
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948354225
+executed,command,,,"AUTOGEN:::org.eclipse.jdt.debug.CompilationUnitEditor.BreakpointRulerActions/org.eclipse.jdt.internal.ui.javaeditor.JavaSelectRulerAction",1375948405608
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948408797
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948409116
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948409454
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948412122
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948414612
+activated,view,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search.ui.views.SearchView",1375948418365
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.findReplace",1375948423966
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948428120
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948429139
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.findReplace",1375948429192
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948438508
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948497546
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948497897
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948499426
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948499788
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948503842
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948507002
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948508673
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948510741
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948513224
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948516243
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948517776
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948525711
+error,log,,,"File not found: '/Compiler/src/partitioner/Partitioner.scala'",1375948528352
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1375948541957
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948544253
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948547392
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948548274
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948606991
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948612422
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948643521
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948645657
+executed,command,org.scala.tools.eclipse.search,0.1.0.v-2_10-201306071255-0121a0e,"org.scala.tools.eclipse.search.commands.FindReferences",1375948645931
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948655362
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948661605
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948661936
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948672402
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948672780
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948674745
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1375948675553
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375948676485
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948696625
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948696941
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948700867
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948701196
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948701898
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948702311
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948703480
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948703831
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948711201
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948711574
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948717112
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948717527
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948724689
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948724992
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375948730859
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375948731241
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375948748741
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375949021483
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375949032744
+activated,editor,org.scala-ide.sdt.core,3.0.1.rc01-2_10-201306070828-c608228,"scala.tools.eclipse.ScalaSourceFileEditor",1375949033120
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1375949125083
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1375949127294
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1375949151564
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1375949152789
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1375949173291
+started,bundle,org.eclipse.epp.usagedata.ui,1.3.1.R201106061540,"org.eclipse.epp.usagedata.ui",1375949173445
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375949174410
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1375949176193
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1375949177463
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.selectAll",1375949236952
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.format",1375949241323
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1375949242819
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1375949245086

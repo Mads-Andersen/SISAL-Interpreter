@@ -1,0 +1,205 @@
+package partitioner
+
+import parser._
+import parser.Type._
+import utility._
+import interpreter.TopologicalSort
+import interpreter._
+
+object CostAssignment {
+  
+  def assign(program: Program) : Seq[CostGraph] = {
+    val scc = SCC.execute(program)
+    assign(scc, List())
+  }
+  
+  def cost(graphs: Seq[CostGraph]) : Int = {
+    val sum = graphs.map(x => cost(x)).sum
+    sum
+  }
+  
+  def cost(graph: CostGraph) : Int = {
+    val nodes = graph.nodes
+    val sum = nodes.map(x => x.cost).sum
+    sum
+  }
+  
+  def communication(graph: Graph, node: Node): Int = {
+    val input = Node.getInputEdges(node, graph).size
+    val output = Node.getOutputEdges(node, graph).size
+    input + output
+  }
+  
+  private def assign(graphs: Graphs, assigned: Seq[CostGraph]) : Seq[CostGraph] = graphs match {
+    case Nil => assigned
+    case h :: t => assign(t, assign(h, assigned) +: assigned)
+  }   
+  
+  private def assign(graph: Graph, assigned: Seq[CostGraph]) : CostGraph = {
+    val nodes = Graph.getNodes(graph)
+    val values = nodes.map(x => cost(graph, x, assigned))
+    val zip = nodes.zip(values)
+    val costNodes = zip.map(x => CostNode(x._1, x._2))
+    CostGraph(graph, costNodes, Graph.getEdges(graph))
+  }
+  
+  private def cost(graph: Graph, node: Node, assigned: Seq[CostGraph]): Int = {
+    node match {
+      case n: NPlus => 1 * frequency(n)
+      case n: NTimes => 1 * frequency(n)
+      case n: NMin => 1 * frequency(n)
+      case n: NMax => 1 * frequency(n)
+      case n: NMinus => 1 * frequency(n)
+      case n: NDiv => 1 * frequency(n)
+      case n: NMod => 1 * frequency(n)
+      case n: NExp => 1 * frequency(n)
+      case n: NAbs => 1 * frequency(n)
+      case n: NNeg => 1 * frequency(n)
+      case n: NNot => 1 * frequency(n)
+      case n: NLess => 1 * frequency(n)
+      case n: NLessEqual => 1 * frequency(n)
+      case n: NEqual => 1 * frequency(n)
+      case n: NNotEqual => 1 * frequency(n)
+      case n: NIsError => 1 * frequency(n)
+      case n: NBool => 1 * frequency(n)
+      case n: NChar => 1 * frequency(n)
+      case n: NDouble => 1 * frequency(n)
+      case n: NInt => 1 * frequency(n)
+      case n: NFloor => 1 * frequency(n)
+      case n: NTrunc => 1 * frequency(n)
+      case n: NSingle => 1 * frequency(n)
+      case n: NNoOp => 1 * frequency(n)
+      case n: NABuild => 1 * frequency(n)
+      case n: NAFill => 1 * frequency(n)
+      case n: NAElement => 1 * frequency(n)
+      case n: NAReplace => 1 * frequency(n)
+      case n: NACatenate => 1 * frequency(n)
+      case n: NALimL => 1 * frequency(n)
+      case n: NALimH => 1 * frequency(n)
+      case n: NASize => 1 * frequency(n)
+      case n: NAIsEmpty => 1 * frequency(n)
+      case n: NAAddL => 1 * frequency(n)
+      case n: NAAddH => 1 * frequency(n)
+      case n: NARemL => 1 * frequency(n)
+      case n: NARemH => 1 * frequency(n)
+      case n: NASetL => 1 * frequency(n)
+      case n: NAExtract => 1 * frequency(n)
+      case n: NRBuild => 1 * frequency(n)
+      case n: NRElements => 1 * frequency(n)
+      case n: NRReplace => 1 * frequency(n)
+      case n: NAScatter => 1 * frequency(n)
+      case n: NRangeGenerate => 1 * frequency(n)
+      case n: NAGather => 1 * frequency(n)
+      case n: NReduce => 1 * frequency(n)
+      case n: NRedLeft => 1 * frequency(n)
+      case n: NRedRight => 1 * frequency(n)
+      case n: NRedTree => 1 * frequency(n)
+      case n: NFirstValue => 1 * frequency(n)
+      case n: NFinalValue => 1 * frequency(n)
+      case n: NCall =>
+        val edges = Graph.getEdges(graph)
+        val nameLiteral = edges.find(x => x.dNode == n.id && x.dPort == 1)
+        nameLiteral match {
+          case None => ???
+          case Some(x) => x match {
+            case e: PREdge => ???
+            case e: PLEdge => 
+              val graphs = assigned.filter(x => x.graph.name == e.value)
+              graphs.size match {
+                case 0 => 200
+                case _ => cost(graphs(0))
+              }
+          }
+        }
+      case n: NBindArguments => 1 * frequency(n)
+      case n: NSelect => cost(n.graphs.map(x => assign(x, assigned)))
+      case n: NTagCase => cost(n.graphs.map(x => assign(x, assigned)))
+      case n: NForAll =>
+        val generator = n.graphs(n.associations(0))
+        val body = n.graphs(n.associations(1))
+        val results = n.graphs(n.associations(2))
+        cost(assign(generator, assigned)) + 
+        cost(assign(body, assigned)) * frequency(n) + 
+        cost(assign(results, assigned))
+      case n: NLoopA =>
+        val init = n.graphs(n.associations(0))
+        val test = n.graphs(n.associations(1))
+        val body = n.graphs(n.associations(2))
+        val returns = n.graphs(n.associations(3))
+        cost(assign(init, assigned)) + 
+        cost(assign(test, assigned)) * frequency(n) + 
+        cost(assign(body, assigned)) * frequency(n) + 
+        cost(assign(returns, assigned))
+      case n: NLoopB =>
+        val init = n.graphs(n.associations(0))
+        val test = n.graphs(n.associations(1))
+        val body = n.graphs(n.associations(2))
+        val returns = n.graphs(n.associations(3))
+        cost(assign(init, assigned)) + 
+        cost(assign(test, assigned)) * frequency(n) + 
+        cost(assign(body, assigned)) * frequency(n) + 
+        cost(assign(returns, assigned))
+    }   
+  }
+  
+  private def frequency(node: Node): Int = node match {
+    case n: NPlus => 1
+    case n: NTimes => 1
+    case n: NMin => 1
+    case n: NMax => 1
+    case n: NMinus => 1
+    case n: NDiv => 1
+    case n: NMod => 1
+    case n: NExp => 1
+    case n: NAbs => 1
+    case n: NNeg => 1
+    case n: NNot => 1
+    case n: NLess => 1
+    case n: NLessEqual => 1
+    case n: NEqual => 1
+    case n: NNotEqual => 1
+    case n: NIsError => 1
+    case n: NBool => 1
+    case n: NChar => 1
+    case n: NDouble => 1
+    case n: NInt => 1
+    case n: NFloor => 1
+    case n: NTrunc => 1
+    case n: NSingle => 1
+    case n: NNoOp => 1
+    case n: NABuild => 1
+    case n: NAFill => 1
+    case n: NAElement => 1
+    case n: NAReplace => 1
+    case n: NACatenate => 1
+    case n: NALimL => 1
+    case n: NALimH => 1
+    case n: NASize => 1
+    case n: NAIsEmpty => 1
+    case n: NAAddL => 1
+    case n: NAAddH => 1
+    case n: NARemL => 1
+    case n: NARemH => 1
+    case n: NASetL => 1
+    case n: NAExtract => 1
+    case n: NRBuild => 1
+    case n: NRElements => 1
+    case n: NRReplace => 1
+    case n: NAScatter => 1
+    case n: NRangeGenerate => 1
+    case n: NAGather => 1
+    case n: NReduce => 1
+    case n: NRedLeft => 1
+    case n: NRedRight => 1
+    case n: NRedTree => 1
+    case n: NFirstValue => 1
+    case n: NFinalValue => 1
+    case n: NCall => 1
+    case n: NBindArguments => 1
+    case n: NSelect => 1
+    case n: NTagCase => 1
+    case n: NForAll => 1
+    case n: NLoopA => 1
+    case n: NLoopB => 1
+  }
+}

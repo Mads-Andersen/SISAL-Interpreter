@@ -1,0 +1,81 @@
+package partitioner
+
+import parser._
+import parser.Type._
+import interpreter._
+import interpreter.TopologicalSort
+import utility.GraphPrinter
+
+object TaskMerger {
+  
+  def main(args: Array[String]) {
+    /*
+    Partitioner.program = Runner.seqABCD
+    val option = Partitioner.program.graphs.find(x => x.name.value.toUpperCase() == "MAIN")
+    val main = option.getOrElse(Partitioner.program.graphs(0))
+    val graph = CostAssignment.createCostGraph(main)
+    val tasks = graph.nodes.map(x => createTask(graph, x))
+    val x = merge(graph, tasks(0), tasks(5), tasks)
+    //GraphPrinter.openGraphs(tasks.map(x => x.graph.graph))
+    GraphPrinter.openGraphs(x.map(x => x.graph.graph)) 
+    * 
+    */
+  }
+  
+  def createTask(graph: CostGraph, node: CostNode) = {
+    val inputs = NodeCost.getInputEdges(node, graph)
+    val outputs = NodeCost.getOutputEdges(node, graph)   
+    val edges = inputs ++ outputs   
+    val parents = NodeCost.getParents(node, graph)
+    val children = NodeCost.getChildren(node, graph)
+    val subgraph = PLGraph(LString(""), 0, node.node +: edges, PMetaInfo(List()))
+    val costgraph = CostGraph(subgraph, List(node), edges)
+    Task(costgraph, parents, children)
+  }
+  
+  private def getNodesId(graph: CostGraph, task1: Task, task2: Task) = {
+    val edges = graph.edges
+    val nodes1 = task1.graph.nodes.map(x => x.node.id)
+    val nodes2 = task2.graph.nodes.map(x => x.node.id)
+    val x = bfsParents(nodes1, edges, nodes1).intersect(bfsChildren(nodes2, edges, nodes2))
+    val y = bfsParents(nodes2, edges, nodes2).intersect(bfsChildren(nodes1, edges, nodes1))
+    val nodes = (x ++ y).toSet.toList.sorted
+    nodes.size match {
+      case 0 => graph.nodes.map(x => x.node.id).sorted
+      case _ => nodes
+    }
+  }
+  
+  def merge(graph: CostGraph, task1: Task, task2: Task, tasks: Tasks) = {
+    val nodesId = getNodesId(graph, task1, task2)
+    val tasksToMerge = tasks.filterNot(t => !TTask.getPNodes(t).forall(x => nodesId.contains(x.id)))
+    val tasksNotToMerge = tasks.diff(tasksToMerge).diff(List(task1)).diff(List(task2))
+    val cnodes = tasksToMerge.map(x => x.graph.nodes).flatten.toSet.toList
+    val cedges = tasksToMerge.map(x => x.graph.edges).flatten.toSet.toList
+    val pnodes = cnodes.map(x => x.node)
+    val pedges = cedges
+    val parents = tasksToMerge.map(x => x.parents).flatten.toSet.toList
+    val children = tasksToMerge.map(x => x.children).flatten.toSet.toList
+    val subgraph = PLGraph(LString(""), 0, pnodes ++ pedges, PMetaInfo(List()))
+    val costgraph = CostGraph(subgraph, cnodes, cedges)
+    
+    val newTasks = tasksNotToMerge :+ Task(costgraph, parents, children)
+    newTasks
+  }
+  
+  def bfsChildren(nodesId: Seq[Int], edges: Edges, values: Seq[Int]) : Seq[Int] = nodesId match {
+    case Nil => values
+    case h :: t =>
+      val newIds = edges.filter(e => h == e.sNode).map(x => x.dNode)
+      val children = newIds.filterNot(x => x == 0 || x == Constant.LiteralSourceNode)
+      bfsChildren(children, edges, values ++ children)
+  }
+  
+  def bfsParents(nodesId: Seq[Int], edges: Edges, values: Seq[Int]) : Seq[Int] = nodesId match {
+    case Nil => values
+    case h :: t =>
+      val newIds = edges.filter(e => h == e.dNode).map(x => x.sNode)
+      val parents =  newIds.filterNot(x => x == 0 || x == Constant.LiteralSourceNode)
+      bfsParents(parents, edges, values ++ parents)
+  }
+}

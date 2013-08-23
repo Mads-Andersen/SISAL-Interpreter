@@ -1,0 +1,11 @@
+define main
+
+function main(n: Integer returns array [Integer])
+
+   for i in 1, n
+      x := i * i     
+      returns array of x
+   end for
+
+end function
+

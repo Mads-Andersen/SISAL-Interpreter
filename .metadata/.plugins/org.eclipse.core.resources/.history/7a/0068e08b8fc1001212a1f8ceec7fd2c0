@@ -1,0 +1,151 @@
+package compiler
+
+import interpreter._
+
+object ParserConverter {
+  
+  def buildGraph() { 
+    val components = compiler.Parser.parseFile("src/compiler/TestFiles/Squares")
+	val types = Utility.getTypes(components)
+	val graphs = createGraphs(components)
+	println(graphs)
+	println(graphs.size)
+	println(graphs(0).nodes.size)
+  }
+  
+  def createGraphs(components: Seq[PComponent]): Seq[Graph] = {
+    components.foldLeft(List[Graph]()) { (graphs, component) =>
+      component match {
+        case x:PLGraph => graphs :+ createGraph(x.components, x.typeData.id, x.typeData.value)
+        case x:PGGraph => graphs :+ createGraph(x.components, x.typeData.id, x.typeData.value)
+        case _ => graphs
+      }
+    }
+  }
+  
+  def createGraph(components:Seq[PComponent], typeRef:Int, value:Literal) = {
+	val edges = createEdges(components)
+	val edgesMap = edges.foldLeft(Map[Int,Edge]()){(map, edge) => map + (edge.id -> edge)} 
+    
+	val psNodes = Utility.getPSNodes(components)
+    val pcNodes = Utility.getPCNodes(components)   
+    
+    val sNodes = psNodes.foldLeft(List[SNode]()){(nodes, node) => nodes :+ createSNode(node.label, node.nodeType, edges)}
+    val cNodes = pcNodes.foldLeft(List[CNode]()){(nodes, node) => nodes :+ createCompound(node.label, node.nodeType, edges, node.graphs, node.associationList)}
+    val nodes = sNodes ++ cNodes
+    
+    val nodesMap = nodes.foldLeft(Map[Int,Node]()){(map, node) => map + (node.id -> node)}
+    val env = Environment(nodesMap, edgesMap)
+    LGraph(typeRef, None, nodesMap.keys.toList.sorted, edgesMap.keys.toList.sorted, env)
+  }
+  
+  def createCompound(nodeId:Int, nodeType:Int, edges:Seq[Edge], subgraphs:Seq[PLGraph], associations:Seq[Int]) = {
+    var inputEdges = List[Int]()
+    var outputEdges = List[Int]()
+    for(e <- edges) {
+      if(nodeId == e.sNode) outputEdges = outputEdges :+ e.id
+      if(nodeId == e.dNode) inputEdges = inputEdges :+ e.id
+    }
+    createCompoundNode(nodeId, nodeType, inputEdges, outputEdges, createGraphs(subgraphs), associations)
+  }
+    
+  def createSNode(nodeId:Int, nodeType:Int, edges:Seq[Edge]) = {
+    var inputEdges = List[Int]()
+    var outputEdges = List[Int]()
+    for(e <- edges) {
+      if(nodeId == e.sNode) outputEdges = outputEdges :+ e.id
+      if(nodeId == e.dNode) inputEdges = inputEdges :+ e.id
+    }
+    createSimpleNode(nodeId, nodeType, inputEdges, outputEdges)
+  } 
+  
+  def createCompoundNode(id:Int, nodeType:Int, input:Seq[Int], output:Seq[Int], graphs:Seq[Graph], associations:Seq[Int]) : CNode = {
+    nodeType match {
+      case 0 => NForAll(id, input, output, graphs, associations)
+      case 1 => NSelect(id, input, output, graphs, associations)
+      case 2 => NTagCase(id, input, output, graphs, associations)
+      case 3 => NLoopA(id, input, output, graphs, associations)
+      case 4 => NLoopB(id, input, output, graphs, associations)
+    }
+  }
+  
+  def createSimpleNode(id:Int, nodeType:Int, input:Seq[Int], output:Seq[Int]) : SNode = {
+    nodeType match {      
+      case 100 => NAAddH(id, input, output)
+      case 101 => NAAddL(id, input, output)
+      case 102 => NAExtract(id, input, output)
+      case 103 => NABuild(id, input, output)
+      case 104 => NACatenate(id, input, output)
+      case 105 => NAElement(id, input, output)
+      case 106 => NAFill(id, input, output)
+      case 107 => NAGather(id, input, output)
+      case 108 => NAIsEmpty(id, input, output)
+      case 109 => NALimH(id, input, output)
+      case 110 => NALimL(id, input, output)
+      case 111 => NARemH(id, input, output)
+      case 112 => NARemL(id, input, output)
+      case 113 => NAReplace(id, input, output)
+      case 114 => NAScatter(id, input, output)
+      case 115 => NASetL(id, input, output)
+      case 116 => NASize(id, input, output)
+      case 117 => NAbs(id, input, output)
+      case 118 => NBindArguments(id, input, output)
+      case 119 => NBool(id, input, output)
+      case 120 => NCall(id, input, output)
+      case 121 => NChar(id, input, output)
+      case 122 => NDiv(id, input, output)
+      case 123 => NDouble(id, input, output)
+      case 124 => NEqual(id, input, output)
+      case 125 => NExp(id, input, output)
+      case 126 => NFirstValue(id, input, output)
+      case 127 => NFinalValue(id, input, output)
+      case 128 => NFloor(id, input, output)
+      case 129 => NInt(id, input, output)
+      case 130 => NIsError(id, input, output)
+      case 131 => NLess(id, input, output)
+      case 132 => NLessEqual(id, input, output)
+      case 133 => NMax(id, input, output)
+      case 134 => NMin(id, input, output)
+      case 135 => NMinus(id, input, output)
+      case 136 => NMod(id, input, output)
+      case 137 => NNeg(id, input, output)
+      case 138 => NNoOp(id, input, output)
+      case 139 => NNot(id, input, output)
+      case 140 => NNotEqual(id, input, output)
+      case 141 => NPlus(id, input, output)
+      case 142 => NRangeGenerate(id, input, output)
+      case 143 => NRBuild(id, input, output)
+      case 144 => NRElements(id, input, output)
+      case 145 => NRReplace(id, input, output)
+      case 146 => NRedLeft(id, input, output)
+      case 147 => NRedRight(id, input, output)
+      case 148 => NRedTree(id, input, output)
+      case 149 => NReduce(id, input, output)
+      case 150 => NRestValues(id, input, output)
+      case 151 => NSingle(id, input, output)
+      case 152 => NTimes(id, input, output)
+      case 153 => NTrunc(id, input, output)
+    }
+  }
+  
+  def createEdges(components:Seq[PComponent]) : Seq[Edge] = {
+    var id = 0;
+    val edges = components.foldLeft(List[PEdge]()){(edges, component) => 
+      component match {
+        case x:PEdge => edges :+ x
+        case _ => edges
+      }
+    }
+    edges.sortBy(e => (e.sNode, e.sPort, e.dNode, e.dPort)).foldLeft(List[Edge]()){(edges, component) => 
+      component match {
+        case x:PREdge => id = id + 1; edges :+ REdge(id, x.sNode, x.dNode, x.typeRef)
+        case x:PLEdge => id = id + 1; edges :+ LEdge(id, x.sNode, x.dNode, x.data.id, x.data.value)
+        case _ => edges
+      }
+    }
+  }
+  
+  def main(args: Array[String]) {
+	 buildGraph()
+  }
+}

@@ -1,0 +1,34 @@
+define main
+
+type OneDim = array [ real ];
+type TwoDim = array [ OneDim ];
+
+function generate( n : integer
+                   returns TwoDim, TwoDim )
+
+   for i in 1, n cross j in 1, n
+   returns array of real(i)/real(j)
+           array of real(i)*real(j)
+   end for
+end function % generate
+
+function doit( n : integer; A, B : TwoDim
+               returns TwoDim )
+
+   for i in 1, n cross
+       j in 1, n
+      c := for k in 1, n
+              t := A[i,k] * B[k,j]
+            returns value of sum t
+            end for
+   returns array of c
+   end for
+end function % doit
+
+function main(  n : integer returns TwoDim )
+
+let A, B := generate( n )
+in  doit( n, A, B )
+end let
+
+end function % main

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/98/trunk/src/main/scala/net/pragyah/scalgorithms/aima/search/csp
+END
+Constraint.scala
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/59/trunk/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/Constraint.scala
+END
+CSP.scala
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/63/trunk/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/CSP.scala
+END
+Domain.scala
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/98/trunk/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/Domain.scala
+END
+Assignment.scala
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/98/trunk/src/main/scala/net/pragyah/scalgorithms/aima/search/csp/Assignment.scala
+END

@@ -1,0 +1,20 @@
+{ 
+} 1 0 3 0 1 2	%sl=20	%sf=program1.sis
+{ 
+	G 3
+	N 6	140
+	N 7	130	%sl=11	%sf=program1.sis
+	N 8	122	%sl=11	%sf=program1.sis
+} 1 0 3 0 1 2 sdfsdfsdf	%sl=20	%sf=program1.sis
+	G 2
+	N 6 140
+{ 
+	G 1
+	N 3 102
+} 1 0 3 0 1 2
+	G 1
+	N 3 102
+{ 
+	G 1
+	N 3 102
+} 1 0 3 0 1 2	lksjdfk lkjsdlfkjs  2lk3

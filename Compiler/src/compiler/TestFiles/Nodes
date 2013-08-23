@@ -1,0 +1,10 @@
+N 1	100	%sl=11	%sf=program1.sis
+N 2	112
+N 3	113	%sl=11
+N 4	114
+N 5	111
+N 6	112
+N 7	113	%sl=11	%sf=program1.sis
+N 8	114	%sl=11	%sf=program1.sis
+N 9	111	%sl=11	%sf=program1.sis
+N 10 112	%sl=11	%sf=program1.sis
