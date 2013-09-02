@@ -1,0 +1,24 @@
+package partitioner
+
+import parser._
+import utility._
+import parser.Type._
+
+
+object TimeModel {
+ 
+  // partitioned macro-actos
+  def processors() = Runtime.getRuntime().availableProcessors()
+  def timeCrit(macros: Macros) = CriticalPath.value(macros)
+  def timeScheduling() = 5.0
+  
+  // macro-actor
+  def timeTotal(macros: Macros) = macros.map(x => time(x) - overhead(x)).sum
+  def time(macro: Macro) = { macro.nodes.map(x => x.cost).sum + overhead(macro) }
+  def overhead(macro: Macro) = timeScheduling + macro.edges.size * overheadValue()
+  def overheadValue() = 0.5
+  
+  def alpha(macros: Macros) = 1 + macros.map(x => overhead(x) / timeTotal(macros)).sum 
+  def beta(macros: Macros) = timeCrit(macros) * processors / timeTotal(macros).toDouble
+  def fTT(macros: Macros) = Math.max(alpha(macros), beta(macros)) 
+}

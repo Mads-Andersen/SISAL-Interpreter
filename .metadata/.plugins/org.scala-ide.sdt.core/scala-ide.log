@@ -1823,3 +1823,34 @@ java.lang.InterruptedException
 	at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:50)
 	at scala.tools.eclipse.ScalaHover.getHoverInfo(ScalaHover.scala:43)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+2013-08-24 00:10:53,093  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-08-24 00:10:53,299  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-08-26 17:16:32,434  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-08-26 17:16:44,586  WARN [org.eclipse.jdt.internal.ui.text.JavaReconciler] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-09-01 02:39:28,204  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-09-01 02:39:28,406  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-09-01 02:40:04,125  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-09-01 02:40:04,327  WARN [ModalContext] - ImplicitHighlightingPresenter - Timeout while waiting for `askLoadedTyped` during implicit highlighting.
+2013-09-02 08:45:16,016 ERROR [Worker-1481] - System.err - Java Model Exception: Java Model Status [Compiler does not exist]
+2013-09-02 08:45:16,016 ERROR [Worker-1481] - System.err - at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:495)
+2013-09-02 08:45:16,016 ERROR [Worker-1481] - System.err - at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2283)
+2013-09-02 08:45:16,016 ERROR [Worker-1481] - System.err - at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:1905)
+2013-09-02 08:45:16,016 ERROR [Worker-1481] - System.err - at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:1927)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ClasspathManagement$class.jdkPaths(ClasspathManagement.scala:138)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject.jdkPaths(ScalaProject.scala:80)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ClasspathManagement$class.scalaClasspath(ClasspathManagement.scala:118)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject.scalaClasspath(ScalaProject.scala:80)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject.setupCompilerClasspath(ScalaProject.scala:509)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject.initializeCompilerSettings(ScalaProject.scala:495)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:99)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject$$anon$1.create(ScalaProject.scala:95)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.util.Cached$class.apply(Cached.scala:30)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject$$anon$1.apply(ScalaProject.scala:95)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject.withPresentationCompiler(ScalaProject.scala:589)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.ScalaProject.withSourceFile(ScalaProject.scala:598)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:66)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.javaelements.ScalaSourceFile.withSourceFile(ScalaSourceFile.scala:50)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.semantichighlighting.Presenter$SemanticHighlightingJob.performSemanticHighlighting(Presenter.scala:145)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at scala.tools.eclipse.semantichighlighting.Presenter$SemanticHighlightingJob.run(Presenter.scala:114)
+2013-09-02 08:45:16,017 ERROR [Worker-1481] - System.err - at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+2013-09-02 08:45:16,293 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Java Model Exception: Java Model Status [Compiler does not exist]

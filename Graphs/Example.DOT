@@ -2,52 +2,48 @@ digraph G {
 	 compound=true;
  	 node [fillcolor="#7690CF", style="rounded,filled",shape=record, height=0.2, width=0.2];
  	 ranksep=.75; size = "7.5,7.5"; 
-	 subgraph clusterGraph49390607 { 
+	 subgraph clusterGraph47170360 { 
  	 label="Graph 0" 
-	 subgraph clusterCNode87093682 { 
+	 subgraph clusterCNode90911460 { 
  		 label="List(0, 1, 2)"; 
- 		 87093682 [label="1: NForAll|<1>1"]; 
- 		 subgraph clusterGraph6144750 { 
+ 		 90911460 [label="1: NForAll|<1>1"]; 
+ 		 subgraph clusterGraph98924060 { 
  		 label="Graph 0" 
-		 14547795 [label="1: NRangeGenerate|<1>1 |<2>2"];
-		 48393487 [label="LInteger(1)", fillcolor="#FFB03B", style="filled"];
-		 6145750 [label="<1>1", fillcolor="#00A388"]
-		 6146750 [label="<2>2", fillcolor="#FF6138"]
+		 34801755 [label="1: NRangeGenerate|<1>1 |<2>2"];
+		 20102136 [label="LInteger(1)", fillcolor="#FFB03B", style="filled"];
+		 98925060 [label="<1>1", fillcolor="#00A388"]
+		 98926060 [label="<2>2", fillcolor="#FF6138"]
 		 }
-		 subgraph clusterGraph88214715 { 
+		 subgraph clusterGraph87635728 { 
  		 label="Graph 1" 
-		 12950979 [label="1: NTimes|<1>1 |<2>2"];
-		 88215715 [label="<2>2", fillcolor="#00A388"]
-		 88216715 [label="<3>3", fillcolor="#FF6138"]
+		 78833542 [label="1: NTimes|<1>1 |<2>2"];
+		 87636728 [label="<2>2", fillcolor="#00A388"]
+		 87637728 [label="<3>3", fillcolor="#FF6138"]
 		 }
-		 subgraph clusterGraph10759502 { 
+		 subgraph clusterGraph23627825 { 
  		 label="Graph 2" 
-		 11654785 [label="1: NAGather|<1>1 |<2>2"];
-		 77948727 [label="LInteger(1)", fillcolor="#FFB03B", style="filled"];
-		 10760502 [label="<3>3", fillcolor="#00A388"]
-		 10761502 [label="<1>1", fillcolor="#FF6138"]
+		 44375955 [label="1: NAGather|<1>1 |<2>2"];
+		 98400082 [label="LInteger(1)", fillcolor="#FFB03B", style="filled"];
+		 23628825 [label="<3>3", fillcolor="#00A388"]
+		 23629825 [label="<1>1", fillcolor="#FF6138"]
 		 }
  	 }
- 	 49391607 [label="<1>1", fillcolor="#00A388"]
+ 	 93315917 [label="2: NASetL|"];
+	 52861199 [label="LInteger(1)", fillcolor="#FFB03B", style="filled"];
+	 47171360 [label="<1>1", fillcolor="#00A388"]
+	 47172360 [label="<1>1", fillcolor="#FF6138"]
 	 }
-	 subgraph clusterGraph81953666 { 
- 	 label="Graph 1" 
-	 15496787 [label="2: NASetL|<1>1 |<2>2"];
-	 56280116 [label="LInteger(1)", fillcolor="#FFB03B", style="filled"];
-	 81955666 [label="<1>1", fillcolor="#FF6138"]
-	 }
-	 49391607:1->87093682:1;
-	 87093682:1->49392607:1;
-	 48393487->14547795:1;
-	 6145750:1->14547795:2;
-	 14547795:1->6146750:2;
-	 88215715:2->12950979:1;
-	 88215715:2->12950979:2;
-	 12950979:1->88216715:3;
-	 77948727->11654785:1;
-	 10760502:3->11654785:2;
-	 11654785:1->10761502:1;
-	 81954666:1->15496787:1;
-	 56280116->15496787:2;
-	 15496787:1->81955666:1;
+	 47171360:1->90911460:1;
+	 90911460:1->93315917:1;
+	 52861199->93315917:2;
+	 93315917:1->47172360:1;
+	 20102136->34801755:1;
+	 98925060:1->34801755:2;
+	 34801755:1->98926060:2;
+	 87636728:2->78833542:1;
+	 87636728:2->78833542:2;
+	 78833542:1->87637728:3;
+	 98400082->44375955:1;
+	 23628825:3->44375955:2;
+	 44375955:1->23629825:1;
 }

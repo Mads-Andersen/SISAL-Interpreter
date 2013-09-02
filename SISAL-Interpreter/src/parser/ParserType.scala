@@ -1,0 +1,124 @@
+package parser
+
+import scala.util.Random
+import parser.Type._
+
+object Type{
+  type GraphResult = Seq[Literal]
+  type Environment = Seq[(Edge, Literal)]
+  type Values = Seq[Literal]
+  type Arguments = Seq[Literal]
+  type Parameters = Seq[Literal]
+  type Graph = PLGraph
+  type Graphs = Seq[PLGraph]
+  type Edge = PEdge
+  type Edges = Seq[PEdge]
+  type Node = PNode
+  type Nodes = Seq[PNode]
+  type CNodes = Seq[PCNode]
+  type SNodes = Seq[PSNode]
+  type CostGraphs = Seq[CostGraph]
+  type CostNodes = Seq[CostNode]
+  type CostEdge = Edge
+  type CostEdges = Seq[CostEdge]
+  type Subgraph = CostGraph
+  type Subgraphs = CostGraphs
+  type SuperGraph = (SuperNodes, SuperEdges)
+  type SuperNode = CostGraph
+  type SuperNodes = CostGraphs
+  type SuperEdges = Seq[SuperEdge]
+  type Partition = CostGraphs
+  type Partitions = Seq[Partition]
+  type ID = Int
+  type IDs = Seq[Int]
+}
+
+case class Program(graphs: Graphs, arguments: Arguments)
+case class CostGraph(graph: Graph,  nodes: CostNodes, edges: CostEdges)
+case class CostNode(node: Node, cost: Int)
+case class SuperEdge(source: CostGraph, sink: CostGraph)
+
+
+abstract class PComponent{val identifier = Random.nextInt(100000000); val meta:PMetaInfo}
+abstract class PGraph extends PComponent{val name:LString; val typeRef:Int; val meta:PMetaInfo}
+abstract class PNode extends PComponent{val id:Int; val meta:PMetaInfo}
+abstract class PEdge extends PComponent{val sNode:Int; val sPort:Int; val dNode:Int; val dPort:Int; val typeRef:Int; val meta:PMetaInfo}
+abstract class PSNode extends PNode{val id:Int; val meta:PMetaInfo}
+abstract class PCNode extends PNode{val id:Int; val graphs:Seq[PLGraph]; val associations:Seq[Int]; val meta:PMetaInfo}
+case class PREdge(sNode:Int, sPort:Int, dNode:Int, dPort:Int, typeRef:Int, meta:PMetaInfo) extends PEdge
+case class PLEdge(sNode:Int, sPort:Int, dNode:Int, dPort:Int, typeRef:Int, value:Literal, meta:PMetaInfo) extends PEdge
+case class PType(id:Int, tType:TType, meta:PMetaInfo) extends PComponent
+case class PLGraph(name:LString, typeRef:Int, components:Seq[PComponent], meta:PMetaInfo) extends PGraph
+//case class PGGraph(name:LString, typeRef:Int, components:Seq[PComponent], meta:PMetaInfo) extends PGraph
+case class PIGraph(name:LString, typeRef:Int, meta:PMetaInfo) extends PGraph
+case class PComment(meta:PMetaInfo) extends PComponent
+case class PMetaInfo(values:List[MetaArg])
+
+abstract class MetaArg
+case class ARSize(value:Int) extends MetaArg
+case class Bounds(low:Int, high:Int) extends MetaArg
+case class ValueByDemand(value:Boolean) extends MetaArg
+case class ValueOrRef(value:Mark.Value) extends MetaArg
+case class Name(value:String) extends MetaArg
+case class OperationNr(value:Int) extends MetaArg
+case class SourceFile(value:String) extends MetaArg
+case class SourceLine(value:Int) extends MetaArg
+case class PointerOrContiguos(value:AllocationStyle.Value) extends MetaArg
+case class PositionXY(x:Int, y:Int) extends MetaArg
+
+abstract class TType
+case class TArray(typeref:Int) extends TType
+case class TBasic(value:TBasicType) extends TType
+case class TField(typeref1:Int, typeref2:Int) extends TType
+case class TFunction(typeref1:Int, typeref2:Int) extends TType
+case class TMultiple(typeref:Int) extends TType
+case class TRecord(typeref:Int) extends TType
+case class TStream(typeref:Int) extends TType
+case class TTag(typeref1:Int, typeref2:Int) extends TType
+case class TTuple(typeref1:Int, typeref2:Int) extends TType
+case class TUnion(typeref:Int) extends TType
+
+abstract class TBasicType
+case object TBoolean extends TBasicType
+case object TCharacter extends TBasicType
+case object TDouble extends TBasicType
+case object TInteger extends TBasicType
+case object TNull extends TBasicType
+case object TReal extends TBasicType
+case object TWildBasic extends TBasicType
+
+abstract class Literal {val identifier = Random.nextInt(100000000)}
+case class LEmpty() extends Literal
+case class LError(text:String, stacktrace: Literal*) extends Literal
+case class LInteger(value:Int) extends Literal
+case class LDouble(value:Double) extends Literal
+case class LCharacter(value:String) extends Literal
+case class LString(value:String) extends Literal
+case class LBoolean(value:Boolean) extends Literal
+case class LNull() extends Literal
+case class LArray(values:Seq[Literal]) extends Literal
+case class LStream(values:Seq[Literal]) extends Literal
+case class LRecord(values:Seq[Literal]) extends Literal
+case class LUnion(value:(Int, Literal)) extends Literal
+case class LMultiple(values:Seq[Literal]) extends Literal
+
+case class Error(value:String)
+
+object Constant {
+  val GraphSourceNode = 0
+  val GraphSinkNode = Int.MaxValue
+  val LiteralSourceNode = Int.MaxValue
+  val LiteralSourcePort = Int.MaxValue
+}
+
+object AllocationStyle extends Enumeration {
+  type AllocationStyle = Value
+  val Pointer = Value("Pointer")
+  val Contiguos = Value("Contiguos") 
+}
+
+object Mark extends Enumeration {
+  type Mark = Value
+  val ValueMark = Value("Value")
+  val ReferenceMark = Value("Reference") 
+}

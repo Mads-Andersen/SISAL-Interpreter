@@ -1,0 +1,20 @@
+package interpreter
+
+import interpreter._
+import parser._
+import parser.Type._
+import utility._
+import partitioner._
+
+object Runner {
+
+  var parallel = false
+  val seq8f = Program(SISAL.compileFile("../Programs/Seq-8F.sis"), List(LInteger(5)))
+  val fibonacci = Program(SISAL.compileFile("../Programs/fibonacci.sis"), List())
+  val sqrt = Program(SISAL.compileFile("../Programs/SqrtLoopA.sis"), List())
+  val squares = Program(SISAL.compileFile("../Programs/Squares.sis"), List(LInteger(5)))
+  val factorial = Program(SISAL.compileFile("../Programs/Factorial.sis"), List())
+  val parABCD = Program(SISAL.compileFile("../Programs/Par-ABCD.sis"), List())
+  val seqABCD = Program(SISAL.compileFile("../Programs/Seq-ABCD.sis"), List())
+  val test = Program(SISAL.compileFunction("function main(returns integer) 1+2"), List())
+}

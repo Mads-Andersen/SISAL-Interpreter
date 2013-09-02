@@ -1,0 +1,102 @@
+package interpreter
+
+import parser._
+import interpreter._
+import sys.process._
+import scala.annotation.tailrec
+import scala.collection.mutable.MutableList
+
+object Utility {
+  
+  def time[R](block: => R): R = {
+    val t0 = System.currentTimeMillis()
+    val result = block
+    val t1 = System.currentTimeMillis()
+    println("Elapsed time: " + (t1 - t0) + "ms")
+    println(result)
+    result
+  }
+  
+  def time[R](code: => R, iterations: Int): R = {
+    var i = 0
+    var times = MutableList[Long]()
+    while(i < iterations) {
+      val t0 = System.nanoTime()
+      val result = code
+      val t1 = System.nanoTime()
+      times += (t1-t0)
+      i = i+1
+    }
+    val results = times.sorted
+    val average = results.sum/iterations
+    val median = results(iterations/2)
+    val best = results(0)
+    println("Average time to compute a block: " + average + "ms")
+    println("Median time to compute a block: " + median + "ms")
+    println("Best time to compute a block: " + best + "ms")
+    code
+  }
+  
+  def getNodeType(node: PNode) = node match {
+    case n: NForAll => 0
+    case n: NSelect => 1
+    case n: NTagCase => 2
+    case n: NLoopA => 3
+    case n: NLoopB => 4
+
+    case n: NAAddH => 100
+    case n: NAAddL => 101
+    case n: NAExtract => 102
+    case n: NABuild => 103
+    case n: NACatenate => 104
+    case n: NAElement => 105
+    case n: NAFill => 106
+    case n: NAGather => 107
+    case n: NAIsEmpty => 108
+    case n: NALimH => 109
+    case n: NALimL => 110
+    case n: NARemH => 111
+    case n: NARemL => 112
+    case n: NAReplace => 113
+    case n: NAScatter => 114
+    case n: NASetL => 115
+    case n: NASize => 116
+    case n: NAbs => 117
+    case n: NBindArguments => 118
+    case n: NBool => 119
+    case n: NCall => 120
+    case n: NChar => 121
+    case n: NDiv => 122
+    case n: NDouble => 123
+    case n: NEqual => 124
+    case n: NExp => 125
+    case n: NFirstValue => 126
+    case n: NFinalValue => 127
+    case n: NFloor => 128
+    case n: NInt => 129
+    case n: NIsError => 130
+    case n: NLess => 131
+    case n: NLessEqual => 132
+    case n: NMax => 133
+    case n: NMin => 134
+    case n: NMinus => 135
+    case n: NMod => 136
+    case n: NNeg => 137
+    case n: NNoOp => 138
+    case n: NNot => 139
+    case n: NNotEqual => 140
+    case n: NPlus => 141
+    case n: NRangeGenerate => 142
+    case n: NRBuild => 143
+    case n: NRElements => 144
+    case n: NRReplace => 145
+    case n: NRedLeft => 146
+    case n: NRedRight => 147
+    case n: NRedTree => 148
+    case n: NReduce => 149
+    case n: NRestValues => 150
+    case n: NSingle => 151
+    case n: NTimes => 152
+    case n: NTrunc => 153
+  }
+}

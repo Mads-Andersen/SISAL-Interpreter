@@ -1,0 +1,34 @@
+package partitioner
+
+import parser._
+import utility._
+import parser.Type._
+
+
+object TimeModel {
+ 
+  // partitioned macro-actos
+  def processors() = Runtime.getRuntime().availableProcessors()
+  def timeCrit(partition: Partition) = CriticalPath.value(partition)
+  def timeScheduling() = 10.0
+  
+  // macro-actor
+  def timeTotal(partition: Partition) = partition.map(x => time(x) - overhead(x)).sum
+  def time(subgraph: Subgraph) = { subgraph.nodes.map(x => x.cost).sum + overhead(subgraph) }
+  def overhead(subgraph: Subgraph) = timeScheduling + getNumberOfEdges(subgraph) * communicationValue()
+  def communicationValue() = 1
+  
+  def alpha(partition: Partition) = 1 + partition.map(x => overhead(x) / timeTotal(partition)).sum 
+  def beta(partition: Partition) = timeCrit(partition) * processors / timeTotal(partition).toDouble
+  def fTT(partition: Partition) = Math.max(alpha(partition), beta(partition)) 
+  
+  
+  def getNumberOfEdges(subgraph: Subgraph) = {
+    val nodes = subgraph.nodes.map(x => x.node.id)
+    val edges = subgraph.edges.filter(x => x.sNode != Constant.LiteralSourceNode && x.sNode != 0)
+    val incoming = edges.filter(x => !nodes.contains(x.sNode) && nodes.contains(x.dNode))
+    val outgoing = edges.filter(x => nodes.contains(x.sNode) && !nodes.contains(x.dNode))
+    val result = (incoming ++ outgoing).toSet.toList
+    result.size
+  }
+}
